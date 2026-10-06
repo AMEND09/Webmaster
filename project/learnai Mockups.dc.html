@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><meta name="design_doc_mode" content="canvas"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Gochi+Hand&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"><style>body{margin:0;background:#e4dfd4;font-family:'Work Sans',system-ui,sans-serif}a{color:#3a5bff}a:hover{color:#ff5a36}.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}.dv-opts{display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 12px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.6)}.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);overflow:hidden}.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}.dv-next{margin:22px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.5)}</style></helmet>
+<section class="dv-turn" id="t0" style="padding-bottom:8px;border:none">
+<div style="max-width:760px;display:flex;flex-direction:column;gap:8px;font:14px/1.55 system-ui,sans-serif;color:#3b3833">
+<div style="font-family:'Archivo Black',sans-serif;font-size:28px;color:#141414">learnai — UI mockups</div>
+<div>Direction: sticker &amp; zine collage. Cream paper, thick ink outlines, hard offset shadows, tape, cut-out lettering and sticker badges. Archivo Black for headlines, Space Mono for labels, Gochi Hand for margin notes, Work Sans for reading text. Accents: tomato, electric blue, acid yellow, mint, pink.</div>
+<div>Striped boxes are placeholders for Bryan's illustrations. Topics and structure follow the "What we decided" outline. Badge rarities C / UC / R / E / L, medals bronze / silver / gold, skill-tree unlocks gated by quiz score.</div>
+</div>
+</section>
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Desktop · light</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a"><div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Home / landing</div><div class="dv-card" style="position:relative;width:1280px;height:860px;overflow:hidden;background-color:#f3eee3;background-image:radial-gradient(rgba(20,20,20,.08) 1px, transparent 1.2px);background-size:18px 18px;color:#141414;font-family:'Work Sans',sans-serif;border-radius:0">
+<dc-import name="Nav" active="" dark="no" hint-size="1280px,72px"></dc-import>
+<div style="display:grid;grid-template-columns:1.35fr 1fr;gap:24px;padding:36px 56px 0;height:500px;box-sizing:border-box">
+<div style="display:flex;flex-direction:column;gap:18px;position:relative">
+<div style="align-self:flex-start;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:1px;padding:5px 10px;background:#6fdcb0;color:#111;border:2px solid #111;transform:rotate(-2deg);white-space:nowrap">FOR GRADES 9–12 · FREE</div>
+<h1 style="margin:0;font-family:'Archivo Black',sans-serif;font-size:54px;line-height:1.02;letter-spacing:-1.5px;font-weight:400">Figure out <span style="background:#ffe14d;color:#111;padding:0 12px;display:inline-block;transform:rotate(-2deg);border:3px solid #111;box-shadow:4px 4px 0 #111">AI</span> before it figures out your <span style="text-decoration:underline wavy #ff5a36 5px;text-underline-offset:12px">homework.</span></h1>
+<p style="margin:0;max-width:470px;font-size:18px;line-height:1.5;color:#5b564c">Bite-size lessons, hands-on models and games that show how AI works, how to use it well, and how to use it fairly.</p>
+<div style="display:flex;gap:14px;align-items:center;margin-top:4px">
+<div style="padding:15px 24px;background:#ff5a36;color:#fff;border:3px solid #111;box-shadow:5px 5px 0 #111;border-radius:12px;font-family:'Archivo Black',sans-serif;font-size:17px">Start the tour →</div>
+<div style="padding:15px 24px;background:#fffdf7;color:#141414;border:3px solid #141414;border-radius:12px;font-family:'Archivo Black',sans-serif;font-size:17px">Open the map</div>
+<div style="font-family:'Gochi Hand',cursive;font-size:21px;color:#3a5bff;transform:rotate(-4deg);line-height:1">← 3-min intro,<br>promise</div>
+</div>
+</div>
+<div style="position:relative">
+<div style="position:absolute;left:40px;top:6px;width:300px;height:360px;box-sizing:border-box;background:#fffdf7;border:2.5px solid #141414;padding:14px 14px 58px;transform:rotate(3deg);box-shadow:6px 6px 0 #141414">
+<div style="width:100%;height:100%;background:repeating-linear-gradient(45deg,#e9e2d2 0 10px,#f3eee3 10px 20px);border:2px dashed #8c8576;display:grid;place-items:center;font-family:'Space Mono',monospace;font-size:12px;color:#5b564c;text-align:center">illustration:<br>Byte the robot mascot</div>
+<div style="position:absolute;left:0;right:0;bottom:12px;text-align:center;font-family:'Gochi Hand',cursive;font-size:24px;color:#141414">meet Byte, your guide</div>
+</div>
+<div style="position:absolute;left:190px;top:-6px;width:110px;height:28px;background:rgba(255,225,77,.75);transform:rotate(-5deg)"></div>
+<div style="position:absolute;right:-10px;top:40px;display:flex;flex-direction:column;align-items:flex-end;gap:6px;transform:rotate(6deg)">
+<div style="display:flex;gap:6px"><span style="background:#111;color:#fff;font-family:Georgia,serif;font-style:italic;font-size:26px;padding:2px 10px">How</span><span style="background:#ffe14d;color:#111;font-family:'Space Mono',monospace;font-weight:700;font-size:24px;padding:2px 8px;border:2px solid #111;transform:rotate(-4deg)">DOES</span></div>
+<div style="display:flex;gap:6px"><span style="background:#3a5bff;color:#fff;font-family:'Archivo Black',sans-serif;font-size:30px;padding:0 10px">AI</span><span style="background:#ff9ecb;color:#111;font-family:'Gochi Hand',cursive;font-size:32px;padding:0 10px;border:2px solid #111;transform:rotate(3deg)">think?</span></div>
+</div>
+<div style="position:absolute;left:-30px;top:140px;width:130px;height:130px;background:#ffe14d;clip-path:polygon(50% 0%,61% 18%,80% 8%,79% 30%,100% 32%,86% 50%,100% 68%,79% 70%,80% 92%,61% 82%,50% 100%,39% 82%,20% 92%,21% 70%,0% 68%,14% 50%,0% 32%,21% 30%,20% 8%,39% 18%);display:grid;place-items:center;transform:rotate(-12deg)"><div style="font-family:'Archivo Black',sans-serif;font-size:22px;line-height:1;text-align:center;color:#111">+50<br><span style="font-size:14px">XP</span></div></div>
+<div style="position:absolute;right:20px;bottom:30px;width:120px;height:120px;border-radius:50%;background:#9b6bff;border:3px solid #111;box-shadow:0 0 0 5px #fffdf7,0 0 0 7.5px #111;display:grid;place-items:center;transform:rotate(10deg)"><div style="font-family:'Space Mono',monospace;font-weight:700;font-size:11px;line-height:1.3;color:#fff;text-align:center;letter-spacing:.5px">LEGENDARY<br>BADGES<br>HIDDEN<br>INSIDE</div></div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;padding:0 56px">
+<div style="background:#fffdf7;border:2.5px solid #141414;box-shadow:5px 5px 0 #141414;border-radius:14px;overflow:hidden">
+<div style="background:#3a5bff;color:#fff;padding:10px 16px;display:flex;justify-content:space-between;align-items:baseline;border-bottom:2.5px solid #141414"><span style="font-family:'Archivo Black',sans-serif;font-size:20px">Foundations</span><span style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700">ZONE 01</span></div>
+<div style="padding:14px 16px;display:flex;flex-wrap:wrap;gap:6px;font-size:13px;font-weight:600"><span style="padding:4px 9px;border:2px solid #141414;border-radius:999px">Neural networks</span><span style="padding:4px 9px;border:2px solid #141414;border-radius:999px">Machine learning</span><span style="padding:4px 9px;border:2px solid #141414;border-radius:999px">Deep learning</span><span style="padding:4px 9px;border:2px solid #141414;border-radius:999px">How chatbots talk</span></div>
+</div>
+<div style="background:#fffdf7;border:2.5px solid #141414;box-shadow:5px 5px 0 #141414;border-radius:14px;overflow:hidden;transform:rotate(-1deg)">
+<div style="background:#ffe14d;color:#111;padding:10px 16px;display:flex;justify-content:space-between;align-items:baseline;border-bottom:2.5px solid #141414"><span style="font-family:'Archivo Black',sans-serif;font-size:20px">Toolbox</span><span style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700">ZONE 02</span></div>
+<div style="padding:14px 16px;display:flex;flex-wrap:wrap;gap:6px;font-size:13px;font-weight:600"><span style="padding:4px 9px;border:2px solid #141414;border-radius:999px">Clear prompts</span><span style="padding:4px 9px;border:2px solid #141414;border-radius:999px">Fact-checking AI</span><span style="padding:4px 9px;border:2px solid #141414;border-radius:999px">Debugging code</span><span style="padding:4px 9px;border:2px solid #141414;border-radius:999px">AI in radiology</span></div>
+</div>
+<div style="background:#fffdf7;border:2.5px solid #141414;box-shadow:5px 5px 0 #141414;border-radius:14px;overflow:hidden">
+<div style="background:#ff9ecb;color:#111;padding:10px 16px;display:flex;justify-content:space-between;align-items:baseline;border-bottom:2.5px solid #141414"><span style="font-family:'Archivo Black',sans-serif;font-size:20px">Ethics</span><span style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700">ZONE 03</span></div>
+<div style="padding:14px 16px;display:flex;flex-wrap:wrap;gap:6px;font-size:13px;font-weight:600"><span style="padding:4px 9px;border:2px solid #141414;border-radius:999px">Deepfakes</span><span style="padding:4px 9px;border:2px solid #141414;border-radius:999px">Academic honesty</span><span style="padding:4px 9px;border:2px solid #141414;border-radius:999px">Data poisoning</span><span style="padding:4px 9px;border:2px solid #141414;border-radius:999px">Water use</span></div>
+</div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:44px;background:#111;color:#ffe14d;display:flex;align-items:center;gap:28px;padding:0 24px;font-family:'Space Mono',monospace;font-weight:700;font-size:14px;letter-spacing:1.5px;white-space:nowrap;overflow:hidden;transform:rotate(-1deg) scale(1.03);transform-origin:center"><span>NEURAL NETWORKS</span><span style="color:#ff5a36">✶</span><span>NEXT-WORD PREDICTION</span><span style="color:#6fdcb0">✶</span><span>PROMPTING</span><span style="color:#ff9ecb">✶</span><span>DEEPFAKES</span><span style="color:#3a5bff">✶</span><span>OVERFITTING</span><span style="color:#ff5a36">✶</span><span>DATA POISONING</span><span style="color:#6fdcb0">✶</span><span>LINEAR ALGEBRA</span></div>
+</div></div>
+
+<div class="dv-opt" id="1b"><div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Intro slideshow (slide 1 of 3)</div><div class="dv-card" style="position:relative;width:1280px;height:860px;overflow:hidden;background-color:#f3eee3;background-image:radial-gradient(rgba(20,20,20,.08) 1px, transparent 1.2px);background-size:18px 18px;color:#141414;font-family:'Work Sans',sans-serif;border-radius:0">
+<div style="display:flex;align-items:center;justify-content:space-between;padding:22px 40px;font-family:'Space Mono',monospace;font-size:13px;font-weight:700">
+<div style="font-family:'Archivo Black',sans-serif;font-size:20px;background:#ff5a36;color:#fff;padding:1px 10px 3px;border:2.5px solid #111;transform:rotate(-3deg)">learn<span style="color:#ffe14d">ai</span></div>
+<div style="letter-spacing:2px">THE INTRO TOUR</div>
+<div style="text-decoration:underline;text-underline-offset:4px">Skip to the map →</div>
+</div>
+<div style="position:absolute;right:-40px;top:150px;width:300px;height:500px;background:#ff9ecb;border:2.5px solid #141414;border-radius:18px;transform:rotate(9deg)"></div>
+<div style="position:absolute;right:-10px;top:130px;width:300px;height:520px;background:#ffe14d;border:2.5px solid #141414;border-radius:18px;transform:rotate(4deg);padding:24px 20px 24px 96px;box-sizing:border-box"><div style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:#111">02 / UP NEXT</div><div style="font-family:'Archivo Black',sans-serif;font-size:30px;color:#111;margin-top:6px">Practical tools</div></div>
+<div style="position:absolute;left:40px;top:96px;width:1020px;height:620px;background:#fffdf7;border:3px solid #141414;box-shadow:8px 8px 0 #141414;border-radius:20px;display:grid;grid-template-columns:1.1fr 1fr;overflow:hidden">
+<div style="padding:44px 44px;display:flex;flex-direction:column;gap:18px;position:relative">
+<div style="font-family:'Archivo Black',sans-serif;font-size:170px;line-height:.8;color:transparent;-webkit-text-stroke:3px #3a5bff;letter-spacing:-6px">01</div>
+<div style="font-family:'Archivo Black',sans-serif;font-size:62px;line-height:1;letter-spacing:-1.5px">Foundations of AI</div>
+<p style="margin:0;font-size:18px;line-height:1.5;color:#5b564c;max-width:420px;text-wrap:pretty">What a neural network actually is, how machines learn from examples, and why a chatbot sometimes sounds sure about things that aren't true.</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px">
+<span style="padding:6px 12px;background:#3a5bff;color:#fff;border:2px solid #111;border-radius:999px;font-size:14px;font-weight:600;transform:rotate(-2deg)">Neural networks</span><span style="padding:6px 12px;background:#6fdcb0;color:#111;border:2px solid #111;border-radius:999px;font-size:14px;font-weight:600;transform:rotate(1deg)">Linear algebra</span><span style="padding:6px 12px;background:#ffe14d;color:#111;border:2px solid #111;border-radius:999px;font-size:14px;font-weight:600">Machine learning</span><span style="padding:6px 12px;background:#ff9ecb;color:#111;border:2px solid #111;border-radius:999px;font-size:14px;font-weight:600;transform:rotate(2deg)">Deep learning</span><span style="padding:6px 12px;background:#fffdf7;color:#111;border:2px solid #111;border-radius:999px;font-size:14px;font-weight:600;transform:rotate(-1deg)">Chatbots</span>
+</div>
+</div>
+<div style="position:relative;border-left:3px solid #141414;background:#3a5bff">
+<div style="position:absolute;inset:40px;background:repeating-linear-gradient(45deg,#e9e2d2 0 10px,#f3eee3 10px 20px);border:2.5px solid #111;display:grid;place-items:center;font-family:'Space Mono',monospace;font-size:12px;color:#5b564c;text-align:center;transform:rotate(-2deg)">illustration:<br>a brain made of<br>connected dots</div>
+<div style="position:absolute;left:150px;top:24px;width:120px;height:30px;background:rgba(255,225,77,.8);transform:rotate(4deg)"></div>
+<div style="position:absolute;right:20px;bottom:20px;font-family:'Gochi Hand',cursive;font-size:24px;color:#fff;transform:rotate(-5deg)">5 topics in here →</div>
+</div>
+</div>
+<div style="position:absolute;left:40px;right:40px;bottom:40px;display:flex;align-items:center;gap:24px">
+<div style="width:56px;height:56px;border-radius:50%;border:3px solid #141414;display:grid;place-items:center;font-size:22px;font-weight:700;opacity:.35">←</div>
+<div style="display:flex;gap:8px;flex:1;max-width:420px"><div style="flex:1;height:12px;border:2.5px solid #141414;border-radius:999px;background:#3a5bff"></div><div style="flex:1;height:12px;border:2.5px solid #141414;border-radius:999px"></div><div style="flex:1;height:12px;border:2.5px solid #141414;border-radius:999px"></div></div>
+<div style="font-family:'Gochi Hand',cursive;font-size:22px;color:#5b564c">tip: arrow keys work too</div>
+<div style="flex:1"></div>
+<div style="padding:15px 26px;background:#ff5a36;color:#fff;border:3px solid #111;box-shadow:5px 5px 0 #111;border-radius:12px;font-family:'Archivo Black',sans-serif;font-size:17px">Next: Practical tools →</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1c"><div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Skill-tree map</div><div class="dv-card" style="position:relative;width:1280px;height:860px;overflow:hidden;background-color:#f3eee3;background-image:radial-gradient(rgba(20,20,20,.08) 1px, transparent 1.2px);background-size:18px 18px;color:#141414;font-family:'Work Sans',sans-serif;border-radius:0">
+<dc-import name="Nav" active="Map" dark="no" hint-size="1280px,72px"></dc-import>
+<div style="display:flex;align-items:flex-end;justify-content:space-between;padding:26px 50px 18px">
+<div><div style="font-family:'Archivo Black',sans-serif;font-size:44px;letter-spacing:-1px;line-height:1">The Map</div><div style="font-size:15px;color:#5b564c;margin-top:6px">Pass a lesson's quiz to unlock the next stop. Better score, shinier medal.</div></div>
+<div style="display:flex;gap:14px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;align-items:center">
+<span style="display:flex;align-items:center;gap:6px"><span style="width:16px;height:16px;border-radius:50%;background:#ffc531;border:2px solid #141414"></span>GOLD</span>
+<span style="display:flex;align-items:center;gap:6px"><span style="width:16px;height:16px;border-radius:50%;background:#d9dde3;border:2px solid #141414"></span>SILVER</span>
+<span style="display:flex;align-items:center;gap:6px"><span style="width:16px;height:16px;border-radius:50%;background:#e0a172;border:2px solid #141414"></span>BRONZE</span>
+<span style="display:flex;align-items:center;gap:6px"><span style="width:16px;height:16px;border-radius:50%;background:#ff5a36;border:2px solid #141414"></span>YOU ARE HERE</span>
+<span style="display:flex;align-items:center;gap:6px"><span style="width:16px;height:16px;border-radius:50%;background:#e9e2d2;border:2px dashed #141414"></span>LOCKED</span>
+</div>
+</div>
+<div style="position:absolute;left:50px;top:200px;width:1180px;height:620px;background:#fffdf7;border:3px solid #141414;box-shadow:7px 7px 0 #141414;border-radius:20px;overflow:hidden">
+<div style="position:absolute;left:14px;top:14px;width:370px;height:592px;background:rgba(58,91,255,.12);border-radius:60% 40% 55% 45% / 45% 55% 45% 55%"></div>
+<div style="position:absolute;left:400px;top:14px;width:370px;height:592px;background:rgba(255,225,77,.3);border-radius:45% 55% 40% 60% / 55% 45% 55% 45%"></div>
+<div style="position:absolute;left:790px;top:14px;width:376px;height:592px;background:rgba(255,158,203,.25);border-radius:55% 45% 60% 40% / 40% 60% 40% 60%"></div>
+<svg width="1180" height="620" style="position:absolute;inset:0"><path d="{{ mapPath }}" fill="none" stroke="#141414" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div style="position:absolute;left:24px;top:22px;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;background:#3a5bff;color:#fff;padding:4px 8px;border:2px solid #111;transform:rotate(-3deg)">01 FOUNDATIONS</div>
+<div style="position:absolute;left:740px;top:574px;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;background:#ffe14d;color:#111;padding:4px 8px;border:2px solid #111;transform:rotate(2deg)">02 TOOLBOX</div>
+<div style="position:absolute;left:1050px;top:574px;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;background:#ff9ecb;color:#111;padding:4px 8px;border:2px solid #111;transform:rotate(-2deg)">03 ETHICS</div>
+<sc-for list="{{ mapNodes }}" as="n" hint-placeholder-count="21">
+<div style="position:absolute;left:{{ n.left }}px;top:{{ n.top }}px;width:60px;height:60px;box-sizing:border-box;border-radius:50%;background:{{ n.bg }};border:3px {{ n.bs }} #141414;box-shadow:{{ n.sh }};display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:20px;color:#111">{{ n.mark }}</div>
+<div style="position:absolute;left:{{ n.lx }}px;top:{{ n.ly }}px;width:120px;text-align:center;font-size:12px;font-weight:700;line-height:1.15;color:{{ n.lc }}">{{ n.name }}</div>
+</sc-for>
+<div style="position:absolute;left:236px;top:46px;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;background:#111;color:#fff;padding:3px 7px;border-radius:4px">YOU</div>
+<div style="position:absolute;left:322px;top:196px;width:120px;background:#fffdf7;border:2.5px solid #141414;box-shadow:4px 4px 0 #141414;border-radius:12px;padding:12px;box-sizing:border-box;display:flex;flex-direction:column;gap:6px;z-index:2">
+<div style="font-family:'Space Mono',monospace;font-size:10px;font-weight:700;color:#ff5a36">UP NEXT</div>
+<div style="font-family:'Archivo Black',sans-serif;font-size:15px;line-height:1.1">Next-word prediction</div>
+<div style="font-size:12px;color:#5b564c">8 min · +120 XP</div>
+<div style="text-align:center;padding:7px;background:#ff5a36;color:#fff;border:2px solid #111;border-radius:8px;font-family:'Archivo Black',sans-serif;font-size:13px">Start</div>
+</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1d"><div class="dv-olabel"><a class="dv-oid" href="#1d">1d</a>Lesson page</div><div class="dv-card" style="position:relative;width:1280px;height:860px;overflow:hidden;background-color:#f3eee3;background-image:radial-gradient(rgba(20,20,20,.08) 1px, transparent 1.2px);background-size:18px 18px;color:#141414;font-family:'Work Sans',sans-serif;border-radius:0">
+<dc-import name="Nav" active="Lessons" dark="no" hint-size="1280px,72px"></dc-import>
+<div style="display:grid;grid-template-columns:270px minmax(0,1fr);gap:36px;padding:32px 50px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="background:#fffdf7;border:2.5px solid #141414;box-shadow:5px 5px 0 #141414;border-radius:14px;overflow:hidden">
+<div style="background:#3a5bff;color:#fff;padding:12px 16px;border-bottom:2.5px solid #141414"><div style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700">ZONE 01 · FOUNDATIONS</div><div style="font-family:'Archivo Black',sans-serif;font-size:20px;margin-top:2px">Machine learning</div></div>
+<div style="padding:10px;display:flex;flex-direction:column;gap:4px;font-size:14px;font-weight:600">
+<div style="display:flex;gap:10px;align-items:center;padding:10px"><span style="width:24px;height:24px;border-radius:50%;background:#6fdcb0;border:2px solid #141414;display:grid;place-items:center;font-size:13px">✓</span>How AI learns from data</div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px"><span style="width:24px;height:24px;border-radius:50%;background:#6fdcb0;border:2px solid #141414;display:grid;place-items:center;font-size:13px">✓</span>Training vs testing</div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px;background:#ffe14d;border:2px solid #141414;border-radius:10px;color:#111"><span style="width:24px;height:24px;border-radius:50%;background:#ff5a36;border:2px solid #111;display:grid;place-items:center;font-size:10px;color:#fff">▶</span>Overfitting &amp; errors</div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px;color:#8c8576"><span style="width:24px;height:24px;border-radius:50%;border:2px dashed #8c8576"></span>Quiz: ML basics</div>
+</div>
+</div>
+<div style="font-family:'Gochi Hand',cursive;font-size:21px;color:#5b564c;transform:rotate(-2deg);padding:0 8px">pass the quiz to unlock “Deep learning” ↓</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:#5b564c">FOUNDATIONS / MACHINE LEARNING / STEP 3 OF 4</div>
+<h1 style="margin:0;font-family:'Archivo Black',sans-serif;font-size:44px;line-height:1.05;letter-spacing:-1px;font-weight:400;max-width:820px">Overfitting: when a model <span style="background:#ff9ecb;color:#111;padding:0 8px">memorizes</span> instead of learns</h1>
+<p style="margin:0;font-size:17px;line-height:1.55;color:#5b564c;max-width:760px;text-wrap:pretty">A model can bend itself to fit every training example perfectly and still fail on new data. That gap between training error and test error is how you spot it.</p>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:24px;background:#fffdf7;border:3px solid #141414;box-shadow:7px 7px 0 #141414;border-radius:18px;padding:22px;position:relative">
+<div style="position:absolute;left:-14px;top:-16px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;background:#ff5a36;color:#fff;padding:5px 10px;border:2px solid #111;transform:rotate(-4deg)">TRY IT</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<svg width="100%" height="230" viewBox="0 0 410 230" preserveAspectRatio="none" style="background:#f3eee3;border:2px solid #141414;border-radius:10px">
+<path d="M20,195 L395,55" stroke="#8c8576" stroke-width="2.5" stroke-dasharray="6 6" fill="none"></path>
+<path d="M20,200 C40,170 50,190 80,150 S110,175 120,160 S150,95 160,110 S190,140 200,120 S230,60 240,80 S270,115 280,95 S310,40 320,60 S350,85 360,70 S385,40 395,45" stroke="#ff5a36" stroke-width="4" fill="none" stroke-linecap="round"></path>
+<g fill="#3a5bff" stroke="#141414" stroke-width="2"><circle cx="80" cy="150" r="7"></circle><circle cx="120" cy="160" r="7"></circle><circle cx="160" cy="110" r="7"></circle><circle cx="200" cy="120" r="7"></circle><circle cx="240" cy="80" r="7"></circle><circle cx="280" cy="95" r="7"></circle><circle cx="320" cy="60" r="7"></circle><circle cx="360" cy="70" r="7"></circle></g>
+<g fill="#fffdf7" stroke="#141414" stroke-width="2.5"><circle cx="100" cy="128" r="7"></circle><circle cx="220" cy="128" r="7"></circle><circle cx="300" cy="62" r="7"></circle></g>
+</svg>
+<div style="display:flex;align-items:center;gap:14px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700">
+<span>SIMPLE</span>
+<div style="flex:1;height:14px;border:2.5px solid #141414;border-radius:999px;background:#fffdf7;position:relative"><div style="position:absolute;left:0;top:0;bottom:0;width:85%;background:#ff5a36;border-radius:999px"></div><div style="position:absolute;left:85%;top:50%;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:#ffe14d;border:3px solid #141414"></div></div>
+<span>WIGGLY</span>
+</div>
+<div style="display:flex;gap:18px;font-size:13px;color:#5b564c"><span style="display:flex;align-items:center;gap:6px"><span style="width:12px;height:12px;border-radius:50%;background:#3a5bff;border:2px solid #141414"></span>training data</span><span style="display:flex;align-items:center;gap:6px"><span style="width:12px;height:12px;border-radius:50%;background:#fffdf7;border:2px solid #141414"></span>new test data</span><span style="display:flex;align-items:center;gap:6px"><span style="width:16px;border-top:2.5px dashed #8c8576"></span>a sensible fit</span></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="border:2.5px solid #141414;border-radius:12px;padding:12px 14px;background:#6fdcb0;color:#111"><div style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700">TRAINING ERROR</div><div style="font-family:'Archivo Black',sans-serif;font-size:38px;line-height:1.1">2%</div></div>
+<div style="border:2.5px solid #141414;border-radius:12px;padding:12px 14px;background:#ff9ecb;color:#111"><div style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700">TEST ERROR</div><div style="font-family:'Archivo Black',sans-serif;font-size:38px;line-height:1.1">31%</div></div>
+<div style="align-self:flex-start;font-family:'Archivo Black',sans-serif;font-size:20px;background:#ffe14d;color:#111;padding:4px 12px;border:2.5px solid #111;transform:rotate(-5deg);box-shadow:3px 3px 0 #111">OVERFIT!</div>
+<div style="font-family:'Gochi Hand',cursive;font-size:19px;line-height:1.1;color:#3a5bff">aces the homework, flunks the test</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:16px;margin-top:4px">
+<div style="padding:14px 22px;background:#ff5a36;color:#fff;border:3px solid #111;box-shadow:5px 5px 0 #111;border-radius:12px;font-family:'Archivo Black',sans-serif;font-size:16px">Next: check yourself →</div>
+<div style="font-family:'Space Mono',monospace;font-size:13px;font-weight:700;padding:6px 10px;border:2px dashed #141414;border-radius:8px">+40 XP</div>
+</div>
+</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1e"><div class="dv-olabel"><a class="dv-oid" href="#1e">1e</a>Interactive neural network</div><div class="dv-card" style="position:relative;width:1280px;height:860px;overflow:hidden;background-color:#f3eee3;background-image:radial-gradient(rgba(20,20,20,.08) 1px, transparent 1.2px);background-size:18px 18px;color:#141414;font-family:'Work Sans',sans-serif;border-radius:0">
+<dc-import name="Nav" active="Lessons" dark="no" hint-size="1280px,72px"></dc-import>
+<div style="display:flex;align-items:flex-end;justify-content:space-between;padding:28px 50px 20px">
+<div><div style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:#5b564c">FOUNDATIONS / NEURAL NETWORKS</div><div style="font-family:'Archivo Black',sans-serif;font-size:44px;letter-spacing:-1px;line-height:1.05">Network playground</div></div>
+<div style="display:flex;border:2.5px solid #141414;border-radius:12px;overflow:hidden;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;background:#fffdf7"><span style="padding:9px 16px;background:#141414;color:#f3eee3">Network</span><span style="padding:9px 16px;border-left:2.5px solid #141414">Convolution</span><span style="padding:9px 16px;border-left:2.5px solid #141414">Vectors</span></div>
+</div>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:28px;padding:0 50px">
+<div style="background:#fffdf7;border:3px solid #141414;box-shadow:7px 7px 0 #141414;border-radius:18px;padding:22px 26px;position:relative;height:600px;box-sizing:border-box">
+<div style="display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:#5b564c;padding:0 30px 0 22px"><span>INPUTS</span><span>HIDDEN LAYER</span><span>OUTPUT</span></div>
+<div style="display:flex;justify-content:center;margin-top:20px">{{ nnSvg }}</div>
+<div style="position:absolute;right:28px;top:136px;font-family:'Archivo Black',sans-serif;font-size:16px;line-height:1.2;text-align:right">cat<br><span style="font-size:12px;font-family:'Space Mono',monospace">82%</span></div>
+<div style="position:absolute;right:28px;top:258px;font-family:'Archivo Black',sans-serif;font-size:16px;line-height:1.2;text-align:right;color:#8c8576">dog<br><span style="font-size:12px;font-family:'Space Mono',monospace">18%</span></div>
+<div style="position:absolute;left:26px;bottom:22px;right:26px;display:flex;justify-content:space-between;align-items:flex-end">
+<div style="display:flex;gap:16px;font-size:13px;color:#5b564c"><span style="display:flex;align-items:center;gap:6px"><span style="width:22px;height:5px;background:#3a5bff;border-radius:3px"></span>positive weight</span><span style="display:flex;align-items:center;gap:6px"><span style="width:22px;height:5px;background:#ff5a36;border-radius:3px"></span>negative weight</span><span>thicker = stronger</span></div>
+<div style="font-family:'Gochi Hand',cursive;font-size:21px;color:#3a5bff;transform:rotate(-3deg)">drag a slider, watch it ripple →</div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="background:#fffdf7;border:2.5px solid #141414;box-shadow:5px 5px 0 #141414;border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:13px">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:'Archivo Black',sans-serif;font-size:18px">Weights</span><span style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:#5b564c">INPUT 1 → HIDDEN</span></div>
+<div style="display:grid;grid-template-columns:34px minmax(0,1fr) 44px;gap:10px;align-items:center;font-family:'Space Mono',monospace;font-size:12px;font-weight:700"><span>w₁</span><div style="height:10px;border:2px solid #141414;border-radius:999px;position:relative"><div style="position:absolute;left:50%;top:0;bottom:0;width:45%;background:#3a5bff"></div><div style="position:absolute;left:95%;top:50%;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;background:#fffdf7;border:2.5px solid #141414"></div></div><span style="text-align:right">+0.9</span></div>
+<div style="display:grid;grid-template-columns:34px minmax(0,1fr) 44px;gap:10px;align-items:center;font-family:'Space Mono',monospace;font-size:12px;font-weight:700"><span>w₂</span><div style="height:10px;border:2px solid #141414;border-radius:999px;position:relative"><div style="position:absolute;right:50%;top:0;bottom:0;width:20%;background:#ff5a36"></div><div style="position:absolute;left:30%;top:50%;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;background:#fffdf7;border:2.5px solid #141414"></div></div><span style="text-align:right">−0.4</span></div>
+<div style="display:grid;grid-template-columns:34px minmax(0,1fr) 44px;gap:10px;align-items:center;font-family:'Space Mono',monospace;font-size:12px;font-weight:700"><span>w₃</span><div style="height:10px;border:2px solid #141414;border-radius:999px;position:relative"><div style="position:absolute;left:50%;top:0;bottom:0;width:35%;background:#3a5bff"></div><div style="position:absolute;left:85%;top:50%;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;background:#ffe14d;border:2.5px solid #141414"></div></div><span style="text-align:right">+0.7</span></div>
+<div style="display:grid;grid-template-columns:34px minmax(0,1fr) 44px;gap:10px;align-items:center;font-family:'Space Mono',monospace;font-size:12px;font-weight:700"><span>w₄</span><div style="height:10px;border:2px solid #141414;border-radius:999px;position:relative"><div style="position:absolute;left:50%;top:0;bottom:0;width:10%;background:#3a5bff"></div><div style="position:absolute;left:60%;top:50%;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;background:#fffdf7;border:2.5px solid #141414"></div></div><span style="text-align:right">+0.2</span></div>
+<div style="display:grid;grid-template-columns:34px minmax(0,1fr) 44px;gap:10px;align-items:center;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;padding-top:10px;border-top:2px dashed #c9c1b0"><span>bias</span><div style="height:10px;border:2px solid #141414;border-radius:999px;position:relative"><div style="position:absolute;left:50%;top:0;bottom:0;width:15%;background:#141414"></div><div style="position:absolute;left:65%;top:50%;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;background:#fffdf7;border:2.5px solid #141414"></div></div><span style="text-align:right">+0.3</span></div>
+<div style="display:flex;gap:8px;align-items:center;font-size:13px;font-weight:600"><span style="color:#5b564c">Activation</span><span style="padding:4px 10px;border:2px solid #141414;border-radius:999px;background:#6fdcb0;color:#111">ReLU</span><span style="padding:4px 10px;border:2px solid #141414;border-radius:999px">Sigmoid</span></div>
+</div>
+<div style="background:#ffe14d;color:#111;border:2.5px solid #111;box-shadow:5px 5px 0 #111;border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px;transform:rotate(1deg);position:relative">
+<div style="position:absolute;right:30px;top:-12px;width:80px;height:24px;background:rgba(255,255,255,.6);transform:rotate(6deg)"></div>
+<div style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700">MISSION</div>
+<div style="font-family:'Archivo Black',sans-serif;font-size:19px;line-height:1.2">Make the network say <u>dog</u> with more than 70% confidence.</div>
+<div style="display:flex;gap:8px;margin-top:4px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700"><span style="background:#111;color:#ffe14d;padding:4px 8px;border-radius:6px">+80 XP</span><span style="background:#3a5bff;color:#fff;padding:4px 8px;border-radius:6px;border:2px solid #111">TINKERER · R</span></div>
+</div>
+</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1f"><div class="dv-olabel"><a class="dv-oid" href="#1f">1f</a>AI Detective activity</div><div class="dv-card" style="position:relative;width:1280px;height:860px;overflow:hidden;background-color:#f3eee3;background-image:radial-gradient(rgba(20,20,20,.08) 1px, transparent 1.2px);background-size:18px 18px;color:#141414;font-family:'Work Sans',sans-serif;border-radius:0">
+<dc-import name="Nav" active="Detective" dark="no" hint-size="1280px,72px"></dc-import>
+<div style="display:flex;align-items:flex-end;justify-content:space-between;padding:24px 50px 44px">
+<div><div style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:#5b564c">CASE FILE #07 · TOOLBOX</div><div style="font-family:'Archivo Black',sans-serif;font-size:44px;letter-spacing:-1px;line-height:1.05">The Confident Chatbot</div></div>
+<div style="font-family:'Space Mono',monospace;font-size:13px;font-weight:700;display:flex;gap:10px"><span style="padding:8px 12px;border:2.5px solid #141414;border-radius:10px;background:#fffdf7">STEP 1 · SPOT</span><span style="padding:8px 12px;border:2.5px dashed #8c8576;border-radius:10px;color:#8c8576">STEP 2 · FIX THE PROMPT</span></div>
+</div>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:30px;padding:0 50px">
+<div style="background:#f2d9a0;border:3px solid #141414;box-shadow:7px 7px 0 #141414;border-radius:6px 18px 18px 18px;padding:26px;display:flex;flex-direction:column;gap:18px;position:relative;height:600px;box-sizing:border-box">
+<div style="position:absolute;left:-3px;top:-34px;width:180px;height:34px;background:#f2d9a0;border:3px solid #141414;border-bottom:none;border-radius:12px 12px 0 0;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;display:grid;place-items:center;color:#111">EVIDENCE</div>
+<div style="align-self:flex-end;max-width:440px;background:#3a5bff;color:#fff;border:2.5px solid #111;border-radius:16px 16px 4px 16px;padding:12px 16px;font-size:15px;line-height:1.45">Write a paragraph about who invented the telephone.</div>
+<div style="display:flex;gap:12px;align-items:flex-start">
+<div style="width:40px;height:40px;flex:none;border-radius:10px;background:#fffdf7;border:2.5px solid #111;display:grid;place-items:center;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:#111">AI</div>
+<div style="background:#fffdf7;color:#141414;border:2.5px solid #111;border-radius:16px 16px 16px 4px;padding:18px 20px;font-size:17px;line-height:1.85;max-width:640px">
+Alexander Graham Bell patented the telephone in 1876. Born in Boston, Bell had long studied speech and hearing. He made the first call to his assistant, <span style="outline:3px solid #ff5a36;outline-offset:3px;border-radius:30px;padding:0 4px">Thomas Edison</span>, saying “Mr. Watson, come here.” He was later awarded the <span style="outline:3px solid #ff5a36;outline-offset:3px;border-radius:30px;padding:0 4px">1915 Nobel Prize in Physics</span> for the invention.
+</div>
+</div>
+<div style="position:absolute;left:470px;top:330px;font-family:'Gochi Hand',cursive;font-size:24px;color:#ff5a36;transform:rotate(-6deg)">it was Watson!</div>
+<div style="position:absolute;left:250px;top:420px;font-family:'Gochi Hand',cursive;font-size:24px;color:#ff5a36;transform:rotate(3deg)">no Nobel. ever.</div>
+<div style="margin-top:auto;display:flex;gap:10px;align-items:center">
+<div style="padding:11px 16px;background:#ff5a36;color:#fff;border:2.5px solid #111;box-shadow:3px 3px 0 #111;border-radius:10px;font-family:'Archivo Black',sans-serif;font-size:14px">Flag a claim</div>
+<div style="padding:11px 16px;background:#fffdf7;color:#111;border:2.5px solid #111;border-radius:10px;font-family:'Archivo Black',sans-serif;font-size:14px">Check a source</div>
+<div style="padding:11px 16px;color:#111;border:2.5px dashed #111;border-radius:10px;font-family:'Space Mono',monospace;font-weight:700;font-size:13px">Hint (−10 XP)</div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="background:#fffdf7;border:2.5px solid #141414;box-shadow:5px 5px 0 #141414;border-radius:14px;padding:18px;display:flex;align-items:center;gap:16px">
+<div style="font-family:'Archivo Black',sans-serif;font-size:56px;line-height:1">2<span style="font-size:28px;color:#8c8576">/3</span></div>
+<div><div style="font-family:'Archivo Black',sans-serif;font-size:18px">mistakes found</div><div style="font-size:14px;color:#5b564c">One more is hiding in plain sight.</div></div>
+</div>
+<div style="background:#c9a77a;border:2.5px solid #141414;border-radius:14px;padding:22px 18px;display:flex;flex-direction:column;gap:16px;background-image:radial-gradient(rgba(0,0,0,.12) 1px,transparent 1.5px);background-size:6px 6px">
+<div style="background:#fffdf7;padding:14px 16px;border:2px solid #111;transform:rotate(-2deg);position:relative;color:#111"><div style="position:absolute;left:50%;top:-9px;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:#ff5a36;border:2px solid #111"></div><div style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:#ff5a36">CLUE 1</div><div style="font-size:15px;font-weight:600">The assistant was Thomas Watson, not Edison.</div></div>
+<div style="background:#fffdf7;padding:14px 16px;border:2px solid #111;transform:rotate(1.5deg);position:relative;color:#111"><div style="position:absolute;left:50%;top:-9px;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:#3a5bff;border:2px solid #111"></div><div style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:#3a5bff">CLUE 2</div><div style="font-size:15px;font-weight:600">Bell never won a Nobel Prize.</div></div>
+<div style="padding:14px 16px;border:2.5px dashed #111;transform:rotate(-1deg);font-family:'Space Mono',monospace;font-size:13px;font-weight:700;text-align:center;color:#111">CLUE 3 · ???</div>
+</div>
+<div style="font-family:'Gochi Hand',cursive;font-size:21px;color:#5b564c;transform:rotate(-2deg)">then you'll rewrite the prompt so the AI cites its sources</div>
+</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1g"><div class="dv-olabel"><a class="dv-oid" href="#1g">1g</a>Quiz with medal tiers</div><div class="dv-card" style="position:relative;width:1280px;height:860px;overflow:hidden;background-color:#f3eee3;background-image:radial-gradient(rgba(20,20,20,.08) 1px, transparent 1.2px);background-size:18px 18px;color:#141414;font-family:'Work Sans',sans-serif;border-radius:0">
+<dc-import name="Nav" active="Lessons" dark="no" hint-size="1280px,72px"></dc-import>
+<div style="display:flex;flex-direction:column;align-items:center;gap:26px;padding:34px 0 0">
+<div style="width:880px;display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:12px;font-weight:700"><span>QUIZ · MACHINE LEARNING BASICS</span><span>YOUR SCORE SO FAR: 2 / 2</span></div>
+<div style="position:relative;height:22px;border:2.5px solid #141414;border-radius:999px;background:#fffdf7;overflow:visible">
+<div style="position:absolute;left:0;top:0;bottom:0;width:40%;background:#6fdcb0;border-radius:999px;border-right:2.5px solid #141414"></div>
+<div style="position:absolute;left:60%;top:-6px;bottom:-6px;border-left:3px dashed #141414"></div>
+<div style="position:absolute;left:80%;top:-6px;bottom:-6px;border-left:3px dashed #141414"></div>
+</div>
+<div style="position:relative;height:44px">
+<div style="position:absolute;left:60%;transform:translateX(-50%);display:flex;align-items:center;gap:6px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700"><span style="width:26px;height:26px;border-radius:50%;background:#e0a172;border:2.5px solid #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:11px">B</span>60% · unlocks next</div>
+<div style="position:absolute;left:80%;transform:translateX(-50%);display:flex;align-items:center;gap:6px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700"><span style="width:26px;height:26px;border-radius:50%;background:#d9dde3;border:2.5px solid #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:11px">S</span>80%</div>
+<div style="position:absolute;right:0;display:flex;align-items:center;gap:6px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700"><span style="width:26px;height:26px;border-radius:50%;background:#ffc531;border:2.5px solid #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:11px">G</span>100%</div>
+</div>
+</div>
+<div style="width:880px;box-sizing:border-box;background:#fffdf7;border:3px solid #141414;box-shadow:8px 8px 0 #141414;border-radius:20px;padding:34px 38px;display:flex;flex-direction:column;gap:24px;position:relative">
+<div style="position:absolute;right:-30px;top:-26px;width:96px;height:96px;background:#ff5a36;clip-path:polygon(50% 0%,61% 18%,80% 8%,79% 30%,100% 32%,86% 50%,100% 68%,79% 70%,80% 92%,61% 82%,50% 100%,39% 82%,20% 92%,21% 70%,0% 68%,14% 50%,0% 32%,21% 30%,20% 8%,39% 18%);display:grid;place-items:center;transform:rotate(10deg)"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;color:#fff;text-align:center;line-height:1">×2<br><span style="font-size:11px">COMBO</span></div></div>
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Space Mono',monospace;font-size:13px;font-weight:700;background:#141414;color:#f3eee3;padding:5px 10px;border-radius:6px">QUESTION 3 OF 5</span><span style="font-family:'Space Mono',monospace;font-size:13px;font-weight:700">⏱ 0:24</span></div>
+<div style="font-family:'Archivo Black',sans-serif;font-size:32px;line-height:1.2;letter-spacing:-.5px">A model scores 99% on its training data and 61% on new data. What's most likely going on?</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+<div style="display:flex;gap:12px;align-items:center;padding:16px;border:2.5px solid #141414;border-radius:14px;font-size:16px;font-weight:600"><span style="width:32px;height:32px;flex:none;border-radius:8px;border:2.5px solid #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif">A</span>It needs a faster computer</div>
+<div style="display:flex;gap:12px;align-items:center;padding:16px;border:3px solid #111;border-radius:14px;font-size:16px;font-weight:700;background:#3a5bff;color:#fff;box-shadow:4px 4px 0 #111;transform:rotate(-1deg)"><span style="width:32px;height:32px;flex:none;border-radius:8px;border:2.5px solid #111;background:#fff;color:#111;display:grid;place-items:center;font-family:'Archivo Black',sans-serif">B</span>It's overfitting the training data</div>
+<div style="display:flex;gap:12px;align-items:center;padding:16px;border:2.5px solid #141414;border-radius:14px;font-size:16px;font-weight:600"><span style="width:32px;height:32px;flex:none;border-radius:8px;border:2.5px solid #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif">C</span>The test data is too easy</div>
+<div style="display:flex;gap:12px;align-items:center;padding:16px;border:2.5px solid #141414;border-radius:14px;font-size:16px;font-weight:600"><span style="width:32px;height:32px;flex:none;border-radius:8px;border:2.5px solid #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif">D</span>It's underfitting</div>
+</div>
+<div style="display:flex;justify-content:space-between;align-items:center">
+<div style="font-size:14px;color:#5b564c;max-width:420px">Score at least bronze to unlock the next lesson. Retake anytime to upgrade your medal.</div>
+<div style="padding:15px 28px;background:#ff5a36;color:#fff;border:3px solid #111;box-shadow:5px 5px 0 #111;border-radius:12px;font-family:'Archivo Black',sans-serif;font-size:17px">Lock it in</div>
+</div>
+</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1h"><div class="dv-olabel"><a class="dv-oid" href="#1h">1h</a>Progress dashboard</div><div class="dv-card" style="position:relative;width:1280px;height:860px;overflow:hidden;background-color:#f3eee3;background-image:radial-gradient(rgba(20,20,20,.08) 1px, transparent 1.2px);background-size:18px 18px;color:#141414;font-family:'Work Sans',sans-serif;border-radius:0">
+<dc-import name="Nav" active="" dark="no" hint-size="1280px,72px"></dc-import>
+<div style="padding:30px 50px 0;display:flex;align-items:baseline;gap:16px"><div style="font-family:'Archivo Black',sans-serif;font-size:44px;letter-spacing:-1px">Hey Maya, welcome back.</div><div style="font-family:'Gochi Hand',cursive;font-size:24px;color:#ff5a36;transform:rotate(-3deg)">6-day streak!</div></div>
+<div style="display:grid;grid-template-columns:330px minmax(0,1fr) 300px;gap:24px;padding:24px 50px">
+<div style="background:#3a5bff;color:#fff;border:3px solid #111;box-shadow:6px 6px 0 #111;border-radius:18px;padding:24px;display:flex;flex-direction:column;align-items:center;gap:14px">
+<div style="width:190px;height:190px;border-radius:50%;background:conic-gradient(#ffe14d 0 83%, rgba(255,255,255,.25) 83% 100%);border:3px solid #111;display:grid;place-items:center"><div style="width:140px;height:140px;border-radius:50%;background:#3a5bff;border:3px solid #111;display:grid;place-items:center;text-align:center"><div><div style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700">LEVEL</div><div style="font-family:'Archivo Black',sans-serif;font-size:60px;line-height:1">7</div></div></div></div>
+<div style="font-family:'Space Mono',monospace;font-size:14px;font-weight:700">1,240 / 1,500 XP</div>
+<div style="font-size:14px;text-align:center">260 XP to Level 8 and the <b>Circuit Board</b> profile frame</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="background:#fffdf7;border:2.5px solid #141414;box-shadow:5px 5px 0 #141414;border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:16px">
+<div style="font-family:'Archivo Black',sans-serif;font-size:19px">Zones</div>
+<div style="display:grid;grid-template-columns:110px minmax(0,1fr) 120px;gap:14px;align-items:center;font-weight:700;font-size:14px"><span>Foundations</span><div style="height:18px;border:2.5px solid #141414;border-radius:999px;overflow:hidden;background:#f3eee3"><div style="width:72%;height:100%;background:#3a5bff;border-right:2.5px solid #141414"></div></div><span style="font-family:'Space Mono',monospace;font-size:12px">5/7 · 2G 2S 1B</span></div>
+<div style="display:grid;grid-template-columns:110px minmax(0,1fr) 120px;gap:14px;align-items:center;font-weight:700;font-size:14px"><span>Toolbox</span><div style="height:18px;border:2.5px solid #141414;border-radius:999px;overflow:hidden;background:#f3eee3"><div style="width:0%;height:100%;background:#ffe14d"></div></div><span style="font-family:'Space Mono',monospace;font-size:12px;color:#8c8576">0/7 · locked</span></div>
+<div style="display:grid;grid-template-columns:110px minmax(0,1fr) 120px;gap:14px;align-items:center;font-weight:700;font-size:14px"><span>Ethics</span><div style="height:18px;border:2.5px solid #141414;border-radius:999px;overflow:hidden;background:#f3eee3"><div style="width:0%;height:100%;background:#ff9ecb"></div></div><span style="font-family:'Space Mono',monospace;font-size:12px;color:#8c8576">0/7 · locked</span></div>
+</div>
+<div style="background:#fffdf7;border:2.5px solid #141414;box-shadow:5px 5px 0 #141414;border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:'Archivo Black',sans-serif;font-size:19px">Up next</span><span style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:#5b564c">8 LESSONS · 3 CASES LEFT IN ZONE</span></div>
+<div style="display:flex;align-items:center;gap:14px;padding:12px;border:2.5px solid #141414;border-radius:12px;background:#ffe14d;color:#111"><span style="width:36px;height:36px;border-radius:50%;background:#ff5a36;border:2.5px solid #111;display:grid;place-items:center;color:#fff;font-size:13px">▶</span><div style="flex:1"><div style="font-weight:700">Next-word prediction</div><div style="font-size:13px">Lesson · 8 min</div></div><span style="font-family:'Space Mono',monospace;font-weight:700;font-size:13px">+120 XP</span></div>
+<div style="display:flex;align-items:center;gap:14px;padding:12px;border:2px dashed #141414;border-radius:12px"><span style="width:36px;height:36px;border-radius:50%;border:2.5px solid #141414;display:grid;place-items:center;font-family:'Space Mono',monospace;font-weight:700;font-size:11px">#07</span><div style="flex:1"><div style="font-weight:700">Finish: The Confident Chatbot</div><div style="font-size:13px;color:#5b564c">Detective · 1 clue left</div></div><span style="font-family:'Space Mono',monospace;font-weight:700;font-size:13px">+60 XP</span></div>
+<div style="display:flex;align-items:center;gap:14px;padding:12px;border:2px dashed #141414;border-radius:12px"><span style="width:36px;height:36px;border-radius:50%;background:#e0a172;border:2.5px solid #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:13px">B</span><div style="flex:1"><div style="font-weight:700">Retake: Overfitting quiz</div><div style="font-size:13px;color:#5b564c">Bronze → go for silver</div></div><span style="font-family:'Space Mono',monospace;font-weight:700;font-size:13px">+30 XP</span></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="background:#fffdf7;border:2.5px solid #141414;box-shadow:5px 5px 0 #141414;border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:14px">
+<div style="font-family:'Archivo Black',sans-serif;font-size:19px">This week</div>
+<div style="display:grid;grid-template-columns:repeat(7,1fr);gap:6px;text-align:center;font-family:'Space Mono',monospace;font-size:11px;font-weight:700">
+<div style="display:flex;flex-direction:column;gap:5px;align-items:center"><span style="width:30px;height:30px;border-radius:8px;background:#ff5a36;border:2px solid #141414"></span>M</div>
+<div style="display:flex;flex-direction:column;gap:5px;align-items:center"><span style="width:30px;height:30px;border-radius:8px;background:#ff5a36;border:2px solid #141414"></span>T</div>
+<div style="display:flex;flex-direction:column;gap:5px;align-items:center"><span style="width:30px;height:30px;border-radius:8px;background:#ff5a36;border:2px solid #141414"></span>W</div>
+<div style="display:flex;flex-direction:column;gap:5px;align-items:center"><span style="width:30px;height:30px;border-radius:8px;background:#ff5a36;border:2px solid #141414"></span>T</div>
+<div style="display:flex;flex-direction:column;gap:5px;align-items:center"><span style="width:30px;height:30px;border-radius:8px;background:#ff5a36;border:2px solid #141414"></span>F</div>
+<div style="display:flex;flex-direction:column;gap:5px;align-items:center"><span style="width:30px;height:30px;border-radius:8px;background:#ff5a36;border:2px solid #141414"></span>S</div>
+<div style="display:flex;flex-direction:column;gap:5px;align-items:center"><span style="width:30px;height:30px;border-radius:8px;border:2px dashed #141414"></span>S</div>
+</div>
+</div>
+<div style="background:#fffdf7;border:2.5px solid #141414;box-shadow:5px 5px 0 #141414;border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:'Archivo Black',sans-serif;font-size:19px">New badges</span><span style="font-size:13px;text-decoration:underline">See all</span></div>
+<div style="display:flex;gap:16px;padding:6px 4px">
+<div style="width:52px;height:52px;border-radius:50%;background:#ffc531;border:2.5px solid #111;box-shadow:0 0 0 4px #fffdf7,0 0 0 6px #111;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:17px;color:#111;transform:rotate(-6deg)">!?</div>
+<div style="width:52px;height:52px;border-radius:50%;background:#3a5bff;border:2.5px solid #111;box-shadow:0 0 0 4px #fffdf7,0 0 0 6px #111;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:17px;color:#fff;transform:rotate(4deg)">∿</div>
+<div style="width:52px;height:52px;border-radius:50%;background:#6fdcb0;border:2.5px solid #111;box-shadow:0 0 0 4px #fffdf7,0 0 0 6px #111;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:17px;color:#111;transform:rotate(-2deg)">7</div>
+</div>
+<div style="font-size:13px;color:#5b564c">11 of 60 collected</div>
+</div>
+</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1i"><div class="dv-olabel"><a class="dv-oid" href="#1i">1i</a>Badge inventory</div><div class="dv-card" style="position:relative;width:1280px;height:860px;overflow:hidden;background-color:#f3eee3;background-image:radial-gradient(rgba(20,20,20,.08) 1px, transparent 1.2px);background-size:18px 18px;color:#141414;font-family:'Work Sans',sans-serif;border-radius:0">
+<dc-import name="Nav" active="Badges" dark="no" hint-size="1280px,72px"></dc-import>
+<div style="display:flex;align-items:flex-end;justify-content:space-between;padding:28px 50px 20px">
+<div><div style="font-family:'Archivo Black',sans-serif;font-size:44px;letter-spacing:-1px;line-height:1.05">Sticker book</div><div style="font-size:15px;color:#5b564c;margin-top:6px">11 of 60 found. Some hide in lessons, some hide on the site itself.</div></div>
+<div style="display:flex;gap:6px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700">
+<span style="padding:6px 12px;border:2px solid #141414;border-radius:999px;background:#141414;color:#f3eee3">ALL</span><span style="padding:6px 12px;border:2px solid #141414;border-radius:999px;background:#d6d0c2;color:#111">C</span><span style="padding:6px 12px;border:2px solid #141414;border-radius:999px;background:#6fdcb0;color:#111">UC</span><span style="padding:6px 12px;border:2px solid #141414;border-radius:999px;background:#3a5bff;color:#fff">R</span><span style="padding:6px 12px;border:2px solid #141414;border-radius:999px;background:#9b6bff;color:#fff">E</span><span style="padding:6px 12px;border:2px solid #141414;border-radius:999px;background:#ffc531;color:#111">L</span>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:30px;padding:0 50px">
+<div style="background:#fffdf7;border:3px solid #141414;box-shadow:7px 7px 0 #141414;border-radius:18px;padding:28px 20px;display:grid;grid-template-columns:repeat(6,1fr);row-gap:28px;column-gap:8px;height:600px;box-sizing:border-box;align-content:start">
+<sc-for list="{{ badges }}" as="b" hint-placeholder-count="18">
+<div style="display:flex;flex-direction:column;align-items:center;gap:12px;opacity:{{ b.op }}">
+<div style="position:relative;width:84px;height:84px;box-sizing:border-box;border-radius:50%;background:{{ b.bg }};border:3px {{ b.bs }} #141414;box-shadow:{{ b.ring }};display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:26px;color:{{ b.fg }};transform:rotate({{ b.rot }})">{{ b.g }}<span style="position:absolute;right:-12px;bottom:-6px;font-family:'Space Mono',monospace;font-size:10px;font-weight:700;padding:2px 5px;border:2px solid #141414;border-radius:6px;background:{{ b.tagBg }};color:{{ b.tagFg }}">{{ b.tag }}</span></div>
+<div style="font-size:12px;font-weight:700;text-align:center;line-height:1.15">{{ b.n }}</div>
+</div>
+</sc-for>
+</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="background:#141414;color:#f3eee3;border:3px solid #141414;box-shadow:7px 7px 0 #ff5a36;border-radius:18px;padding:28px 24px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center">
+<div style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700;background:#ffc531;color:#111;padding:4px 10px;border-radius:6px">LEGENDARY</div>
+<div style="width:150px;height:150px;border-radius:50%;background:#ffc531;border:4px solid #111;box-shadow:0 0 0 8px #f3eee3,0 0 0 12px #ffc531;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:52px;color:#111;transform:rotate(-8deg);margin:14px 0">!?</div>
+<div style="font-family:'Archivo Black',sans-serif;font-size:28px">Glitch Hunter</div>
+<div style="font-size:15px;line-height:1.5;color:#cfc8b8">You found the broken pixel hiding somewhere on the site and clicked it.</div>
+<div style="display:flex;gap:18px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;margin-top:4px"><span>EARNED OCT 2</span><span style="color:#ffe14d">2% OF STUDENTS</span></div>
+</div>
+<div style="font-family:'Gochi Hand',cursive;font-size:21px;color:#5b564c;transform:rotate(-2deg)">psst… the “???” ones each have a hidden trigger</div>
+</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1j"><div class="dv-olabel"><a class="dv-oid" href="#1j">1j</a>Leaderboard / competition</div><div class="dv-card" style="position:relative;width:1280px;height:860px;overflow:hidden;background-color:#f3eee3;background-image:radial-gradient(rgba(20,20,20,.08) 1px, transparent 1.2px);background-size:18px 18px;color:#141414;font-family:'Work Sans',sans-serif;border-radius:0">
+<dc-import name="Nav" active="League" dark="no" hint-size="1280px,72px"></dc-import>
+<div style="display:flex;align-items:flex-end;justify-content:space-between;padding:28px 50px 20px">
+<div><div style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:#5b564c">BRONZE LEAGUE · ROOM 204</div><div style="font-family:'Archivo Black',sans-serif;font-size:44px;letter-spacing:-1px;line-height:1.05">This week's league</div></div>
+<div style="font-family:'Space Mono',monospace;font-size:13px;font-weight:700;padding:8px 12px;border:2.5px solid #141414;border-radius:10px;background:#fffdf7">ENDS IN 2D 4H</div>
+</div>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:30px;padding:0 50px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:end;height:210px">
+<div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:62px;height:62px;border-radius:50%;background:#6fdcb0;border:3px solid #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif">JR</div><div style="font-weight:700">Jordan R.</div><div style="width:100%;height:84px;background:#d9dde3;border:3px solid #141414;border-radius:12px 12px 0 0;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:40px;color:#111">2</div></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="font-family:'Gochi Hand',cursive;font-size:20px;color:#ff5a36;transform:rotate(-4deg)">on fire</div><div style="width:72px;height:72px;border-radius:50%;background:#ffe14d;border:3px solid #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:18px">AN</div><div style="font-weight:700">Ava N. · 2,340 XP</div><div style="width:100%;height:108px;background:#ffc531;border:3px solid #141414;border-radius:12px 12px 0 0;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:52px;color:#111;box-shadow:6px 0 0 #141414">1</div></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:62px;height:62px;border-radius:50%;background:#ff9ecb;border:3px solid #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif">SK</div><div style="font-weight:700">Sam K.</div><div style="width:100%;height:64px;background:#e0a172;border:3px solid #141414;border-radius:12px 12px 0 0;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:36px;color:#111">3</div></div>
+</div>
+<div style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700;text-align:center;border-top:3px dashed #141414;padding-top:8px;color:#5b564c">↑ TOP 3 MOVE UP TO SILVER LEAGUE</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<sc-for list="{{ rows }}" as="r" hint-placeholder-count="6">
+<div style="display:grid;grid-template-columns:40px 40px minmax(0,1fr) auto;gap:14px;align-items:center;padding:7px 14px;border:2.5px solid #141414;border-radius:12px;background:{{ r.bg }};box-shadow:{{ r.sh }};color:#111"><span style="font-family:'Archivo Black',sans-serif;font-size:18px">{{ r.rank }}</span><span style="width:34px;height:34px;border-radius:50%;background:{{ r.c }};border:2px solid #111;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:12px">{{ r.ini }}</span><span style="font-weight:{{ r.fw }}">{{ r.name }}</span><span style="font-family:'Space Mono',monospace;font-weight:700;font-size:14px">{{ r.xp }} XP</span></div>
+</sc-for>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="background:#ff5a36;color:#fff;border:3px solid #111;box-shadow:7px 7px 0 #111;border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:14px;transform:rotate(-1deg);position:relative">
+<div style="position:absolute;left:40%;top:-14px;width:100px;height:28px;background:rgba(255,225,77,.85);transform:rotate(-3deg)"></div>
+<div style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700">HEAD-TO-HEAD</div>
+<div style="font-family:'Archivo Black',sans-serif;font-size:32px;line-height:1.05">Prompt Duel</div>
+<div style="font-size:15px;line-height:1.5">You and a friend get the same task. Write the clearer prompt. A rubric scores both, best prompt takes the XP.</div>
+<div style="display:flex;align-items:center;gap:10px;margin-top:4px">
+<div style="width:52px;height:52px;border-radius:50%;background:#ff9ecb;border:3px solid #111;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;color:#111">MA</div>
+<div style="font-family:'Archivo Black',sans-serif;font-size:22px;color:#ffe14d">VS</div>
+<div style="width:52px;height:52px;border-radius:50%;border:3px dashed #fff;display:grid;place-items:center;font-size:24px">+</div>
+</div>
+<div style="padding:13px;background:#fffdf7;color:#111;border:2.5px solid #111;border-radius:12px;text-align:center;font-family:'Archivo Black',sans-serif;font-size:16px">Challenge a classmate</div>
+</div>
+<div style="background:#fffdf7;border:2.5px solid #141414;box-shadow:5px 5px 0 #141414;border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px">
+<div style="font-family:'Archivo Black',sans-serif;font-size:17px">Other games</div>
+<div style="display:flex;justify-content:space-between;font-size:14px;font-weight:600;padding:6px 0;border-bottom:2px dashed #d6d0c2"><span>Real or Deepfake?</span><span style="font-family:'Space Mono',monospace;font-size:12px">SPEED ROUND</span></div>
+<div style="display:flex;justify-content:space-between;font-size:14px;font-weight:600;padding:6px 0"><span>Guess the Next Word</span><span style="font-family:'Space Mono',monospace;font-size:12px">CLASS VS CLASS</span></div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</section>
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">1</a><span class="dv-tname">Mobile · light</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1k"><div class="dv-olabel"><a class="dv-oid" href="#1k">1k</a>Home</div><div style="position:relative;width:390px;height:820px;box-sizing:border-box;border:3px solid #141414;border-radius:46px;box-shadow:7px 7px 0 #141414;overflow:hidden;background-color:#f3eee3;background-image:radial-gradient(rgba(20,20,20,.08) 1px, transparent 1.2px);background-size:18px 18px;color:#141414;font-family:'Work Sans',sans-serif">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px 0;font-family:'Space Mono',monospace;font-size:13px;font-weight:700"><span>9:41</span><span style="width:96px;height:26px;background:#111;border-radius:999px"></span><span>100%</span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:18px 22px 0"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;background:#ff5a36;color:#fff;padding:1px 10px 3px;border:2.5px solid #111;transform:rotate(-3deg)">learn<span style="color:#ffe14d">ai</span></div><div style="display:flex;align-items:center;gap:8px;padding:4px 10px 4px 4px;border:2px solid #141414;border-radius:999px;font-family:'Space Mono',monospace;font-size:11px;font-weight:700"><span style="background:#3a5bff;color:#fff;border-radius:999px;padding:2px 7px">LV 7</span>1,240</div></div>
+<div style="padding:26px 22px 0;display:flex;flex-direction:column;gap:16px">
+<h1 style="margin:0;font-family:'Archivo Black',sans-serif;font-size:40px;line-height:1.02;letter-spacing:-1px;font-weight:400">Figure out <span style="background:#ffe14d;color:#111;padding:0 8px;display:inline-block;transform:rotate(-2deg);border:2.5px solid #111">AI</span> before it figures out your <span style="text-decoration:underline wavy #ff5a36 3px;text-underline-offset:8px">homework.</span></h1>
+<p style="margin:0;font-size:15px;line-height:1.5;color:#5b564c">Bite-size lessons, hands-on models and games.</p>
+<div style="padding:15px;background:#ff5a36;color:#fff;border:3px solid #111;box-shadow:4px 4px 0 #111;border-radius:12px;font-family:'Archivo Black',sans-serif;font-size:16px;text-align:center">Continue: Next-word prediction</div>
+</div>
+<div style="position:relative;margin:26px 22px 0;height:190px">
+<div style="position:absolute;left:30px;top:0;width:200px;height:180px;box-sizing:border-box;background:#fffdf7;border:2.5px solid #141414;padding:10px 10px 36px;transform:rotate(-3deg);box-shadow:4px 4px 0 #141414"><div style="width:100%;height:100%;background:repeating-linear-gradient(45deg,#e9e2d2 0 8px,#f3eee3 8px 16px);border:2px dashed #8c8576;display:grid;place-items:center;font-family:'Space Mono',monospace;font-size:10px;color:#5b564c">Byte mascot</div><div style="position:absolute;left:0;right:0;bottom:6px;text-align:center;font-family:'Gochi Hand',cursive;font-size:18px">keep going!</div></div>
+<div style="position:absolute;left:100px;top:-10px;width:70px;height:20px;background:rgba(255,225,77,.8);transform:rotate(4deg)"></div>
+<div style="position:absolute;right:0;top:40px;width:100px;height:100px;background:#ffe14d;clip-path:polygon(50% 0%,61% 18%,80% 8%,79% 30%,100% 32%,86% 50%,100% 68%,79% 70%,80% 92%,61% 82%,50% 100%,39% 82%,20% 92%,21% 70%,0% 68%,14% 50%,0% 32%,21% 30%,20% 8%,39% 18%);display:grid;place-items:center;transform:rotate(12deg)"><div style="font-family:'Archivo Black',sans-serif;font-size:15px;line-height:1;text-align:center;color:#111">6-DAY<br>STREAK</div></div>
+</div>
+<div style="display:flex;gap:10px;padding:10px 22px 0;overflow:hidden">
+<div style="flex:none;width:150px;background:#3a5bff;color:#fff;border:2.5px solid #111;border-radius:14px;padding:12px;box-shadow:3px 3px 0 #111"><div style="font-family:'Space Mono',monospace;font-size:10px;font-weight:700">ZONE 01</div><div style="font-family:'Archivo Black',sans-serif;font-size:17px">Foundations</div><div style="font-size:12px;margin-top:4px">5 of 7 done</div></div>
+<div style="flex:none;width:150px;background:#ffe14d;color:#111;border:2.5px solid #111;border-radius:14px;padding:12px;box-shadow:3px 3px 0 #111"><div style="font-family:'Space Mono',monospace;font-size:10px;font-weight:700">ZONE 02</div><div style="font-family:'Archivo Black',sans-serif;font-size:17px">Toolbox</div><div style="font-size:12px;margin-top:4px">locked</div></div>
+<div style="flex:none;width:150px;background:#ff9ecb;color:#111;border:2.5px solid #111;border-radius:14px;padding:12px;box-shadow:3px 3px 0 #111"><div style="font-family:'Space Mono',monospace;font-size:10px;font-weight:700">ZONE 03</div><div style="font-family:'Archivo Black',sans-serif;font-size:17px">Ethics</div></div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:78px;background:#fffdf7;border-top:2.5px solid #141414;display:grid;grid-template-columns:repeat(5,1fr);align-items:center;text-align:center;font-family:'Space Mono',monospace;font-size:10px;font-weight:700;padding-bottom:10px;box-sizing:border-box">
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;background:#ffe14d;border:2px solid #141414"></span>HOME</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;border:2px solid #141414"></span>MAP</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;border:2px solid #141414"></span>CASES</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;border:2px solid #141414"></span>BADGES</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;border:2px solid #141414"></span>LEAGUE</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1l"><div class="dv-olabel"><a class="dv-oid" href="#1l">1l</a>Skill-tree map</div><div style="position:relative;width:390px;height:820px;box-sizing:border-box;border:3px solid #141414;border-radius:46px;box-shadow:7px 7px 0 #141414;overflow:hidden;background-color:#f3eee3;background-image:radial-gradient(rgba(20,20,20,.08) 1px, transparent 1.2px);background-size:18px 18px;color:#141414;font-family:'Work Sans',sans-serif">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px 0;font-family:'Space Mono',monospace;font-size:13px;font-weight:700"><span>9:41</span><span style="width:96px;height:26px;background:#111;border-radius:999px"></span><span>100%</span></div>
+<div style="padding:20px 22px 0;display:flex;justify-content:space-between;align-items:center"><div style="font-family:'Archivo Black',sans-serif;font-size:30px">The Map</div><span style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700;background:#3a5bff;color:#fff;padding:4px 8px;border:2px solid #111;transform:rotate(-3deg)">01 FOUNDATIONS</span></div>
+<div style="position:absolute;left:22px;right:22px;top:130px;bottom:96px;background:rgba(58,91,255,.12);border-radius:40% 60% 45% 55% / 20% 25% 20% 25%"></div>
+<svg width="390" height="820" style="position:absolute;inset:0"><path d="M120,720 L260,640 L120,560 L260,480 L120,400 L260,310 L150,210" fill="none" stroke="#141414" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"></path></svg>
+<div style="position:absolute;left:94px;top:694px;width:52px;height:52px;box-sizing:border-box;border-radius:50%;background:#ffc531;border:3px solid #141414;box-shadow:3px 3px 0 #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;color:#111">G</div><div style="position:absolute;left:156px;top:708px;font-size:13px;font-weight:700">Neural networks</div>
+<div style="position:absolute;left:234px;top:614px;width:52px;height:52px;box-sizing:border-box;border-radius:50%;background:#d9dde3;border:3px solid #141414;box-shadow:3px 3px 0 #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;color:#111">S</div><div style="position:absolute;left:100px;top:628px;font-size:13px;font-weight:700;width:124px;text-align:right">Linear algebra</div>
+<div style="position:absolute;left:94px;top:534px;width:52px;height:52px;box-sizing:border-box;border-radius:50%;background:#ffc531;border:3px solid #141414;box-shadow:3px 3px 0 #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;color:#111">G</div><div style="position:absolute;left:156px;top:548px;font-size:13px;font-weight:700">How AI learns</div>
+<div style="position:absolute;left:234px;top:454px;width:52px;height:52px;box-sizing:border-box;border-radius:50%;background:#e0a172;border:3px solid #141414;box-shadow:3px 3px 0 #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;color:#111">B</div><div style="position:absolute;left:100px;top:468px;font-size:13px;font-weight:700;width:124px;text-align:right">Overfitting</div>
+<div style="position:absolute;left:94px;top:374px;width:52px;height:52px;box-sizing:border-box;border-radius:50%;background:#d9dde3;border:3px solid #141414;box-shadow:3px 3px 0 #141414;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;color:#111">S</div><div style="position:absolute;left:156px;top:388px;font-size:13px;font-weight:700">Training vs testing</div>
+<div style="position:absolute;left:228px;top:278px;width:64px;height:64px;box-sizing:border-box;border-radius:50%;background:#ff5a36;border:3px solid #141414;box-shadow:0 0 0 7px rgba(255,90,54,.25);display:grid;place-items:center;font-size:18px;color:#fff">▶</div>
+<div style="position:absolute;left:44px;top:270px;width:168px;background:#fffdf7;border:2.5px solid #141414;box-shadow:4px 4px 0 #141414;border-radius:12px;padding:10px 12px;box-sizing:border-box"><div style="font-family:'Space Mono',monospace;font-size:10px;font-weight:700;color:#ff5a36">YOU ARE HERE</div><div style="font-family:'Archivo Black',sans-serif;font-size:14px;line-height:1.15">Next-word prediction</div><div style="font-size:11px;color:#5b564c;margin-top:2px">+120 XP</div></div>
+<div style="position:absolute;left:124px;top:184px;width:52px;height:52px;box-sizing:border-box;border-radius:50%;background:#e9e2d2;border:3px dashed #141414"></div><div style="position:absolute;left:186px;top:192px;font-size:13px;font-weight:700;color:#8c8576;width:150px">Why AI makes things up</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:78px;background:#fffdf7;border-top:2.5px solid #141414;display:grid;grid-template-columns:repeat(5,1fr);align-items:center;text-align:center;font-family:'Space Mono',monospace;font-size:10px;font-weight:700;padding-bottom:10px;box-sizing:border-box">
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;border:2px solid #141414"></span>HOME</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;background:#ffe14d;border:2px solid #141414"></span>MAP</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;border:2px solid #141414"></span>CASES</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;border:2px solid #141414"></span>BADGES</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;border:2px solid #141414"></span>LEAGUE</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1m"><div class="dv-olabel"><a class="dv-oid" href="#1m">1m</a>Quiz</div><div style="position:relative;width:390px;height:820px;box-sizing:border-box;border:3px solid #141414;border-radius:46px;box-shadow:7px 7px 0 #141414;overflow:hidden;background-color:#f3eee3;background-image:radial-gradient(rgba(20,20,20,.08) 1px, transparent 1.2px);background-size:18px 18px;color:#141414;font-family:'Work Sans',sans-serif">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px 0;font-family:'Space Mono',monospace;font-size:13px;font-weight:700"><span>9:41</span><span style="width:96px;height:26px;background:#111;border-radius:999px"></span><span>100%</span></div>
+<div style="padding:22px 22px 0;display:flex;align-items:center;gap:12px"><span style="font-size:22px;font-weight:700">✕</span><div style="flex:1;height:16px;border:2.5px solid #141414;border-radius:999px;background:#fffdf7;position:relative;overflow:hidden"><div style="width:40%;height:100%;background:#6fdcb0;border-right:2.5px solid #141414"></div></div><span style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700">3/5</span></div>
+<div style="display:flex;gap:8px;padding:14px 22px 0;font-family:'Space Mono',monospace;font-size:11px;font-weight:700">
+<span style="display:flex;align-items:center;gap:5px;padding:4px 8px;border:2px solid #141414;border-radius:999px;background:#e0a172;color:#111">B 60%</span><span style="display:flex;align-items:center;gap:5px;padding:4px 8px;border:2px solid #141414;border-radius:999px;background:#d9dde3;color:#111">S 80%</span><span style="display:flex;align-items:center;gap:5px;padding:4px 8px;border:2px solid #141414;border-radius:999px;background:#ffc531;color:#111">G 100%</span>
+</div>
+<div style="margin:22px 22px 0;background:#fffdf7;border:3px solid #141414;box-shadow:6px 6px 0 #141414;border-radius:18px;padding:22px 20px;display:flex;flex-direction:column;gap:16px;position:relative">
+<div style="position:absolute;right:-12px;top:-18px;font-family:'Archivo Black',sans-serif;font-size:14px;background:#ff5a36;color:#fff;padding:4px 10px;border:2.5px solid #111;transform:rotate(8deg)">×2 COMBO</div>
+<div style="font-family:'Archivo Black',sans-serif;font-size:23px;line-height:1.2">A model scores 99% on training data and 61% on new data. What's going on?</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="padding:14px;border:2.5px solid #141414;border-radius:12px;font-size:15px;font-weight:600">A · It needs a faster computer</div>
+<div style="padding:14px;border:3px solid #111;border-radius:12px;font-size:15px;font-weight:700;background:#3a5bff;color:#fff;box-shadow:3px 3px 0 #111">B · It's overfitting</div>
+<div style="padding:14px;border:2.5px solid #141414;border-radius:12px;font-size:15px;font-weight:600">C · The test data is too easy</div>
+<div style="padding:14px;border:2.5px solid #141414;border-radius:12px;font-size:15px;font-weight:600">D · It's underfitting</div>
+</div>
+</div>
+<div style="position:absolute;left:22px;right:22px;bottom:34px;padding:16px;background:#ff5a36;color:#fff;border:3px solid #111;box-shadow:4px 4px 0 #111;border-radius:12px;font-family:'Archivo Black',sans-serif;font-size:17px;text-align:center">Lock it in</div>
+</div></div>
+
+<div class="dv-opt" id="1n"><div class="dv-olabel"><a class="dv-oid" href="#1n">1n</a>Sticker book</div><div style="position:relative;width:390px;height:820px;box-sizing:border-box;border:3px solid #141414;border-radius:46px;box-shadow:7px 7px 0 #141414;overflow:hidden;background-color:#f3eee3;background-image:radial-gradient(rgba(20,20,20,.08) 1px, transparent 1.2px);background-size:18px 18px;color:#141414;font-family:'Work Sans',sans-serif">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px 0;font-family:'Space Mono',monospace;font-size:13px;font-weight:700"><span>9:41</span><span style="width:96px;height:26px;background:#111;border-radius:999px"></span><span>100%</span></div>
+<div style="padding:20px 22px 0"><div style="font-family:'Archivo Black',sans-serif;font-size:30px">Sticker book</div><div style="font-size:13px;color:#5b564c">11 of 60 found</div></div>
+<div style="display:flex;gap:6px;padding:14px 22px 0;font-family:'Space Mono',monospace;font-size:11px;font-weight:700"><span style="padding:5px 10px;border:2px solid #141414;border-radius:999px;background:#141414;color:#f3eee3">ALL</span><span style="padding:5px 10px;border:2px solid #141414;border-radius:999px;background:#d6d0c2;color:#111">C</span><span style="padding:5px 10px;border:2px solid #141414;border-radius:999px;background:#6fdcb0;color:#111">UC</span><span style="padding:5px 10px;border:2px solid #141414;border-radius:999px;background:#3a5bff;color:#fff">R</span><span style="padding:5px 10px;border:2px solid #141414;border-radius:999px;background:#9b6bff;color:#fff">E</span><span style="padding:5px 10px;border:2px solid #141414;border-radius:999px;background:#ffc531;color:#111">L</span></div>
+<div style="margin:18px 16px 0;display:grid;grid-template-columns:repeat(3,1fr);row-gap:24px;padding:22px 6px;background:#fffdf7;border:3px solid #141414;border-radius:18px;height:560px;box-sizing:border-box;overflow:hidden;align-content:start">
+<sc-for list="{{ badges }}" as="b" hint-placeholder-count="12">
+<div style="display:flex;flex-direction:column;align-items:center;gap:10px;opacity:{{ b.op }}">
+<div style="position:relative;width:70px;height:70px;box-sizing:border-box;border-radius:50%;background:{{ b.bg }};border:3px {{ b.bs }} #141414;box-shadow:{{ b.ring }};display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:22px;color:{{ b.fg }};transform:rotate({{ b.rot }})">{{ b.g }}<span style="position:absolute;right:-10px;bottom:-6px;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;padding:1px 4px;border:2px solid #141414;border-radius:5px;background:{{ b.tagBg }};color:{{ b.tagFg }}">{{ b.tag }}</span></div>
+<div style="font-size:11px;font-weight:700;text-align:center;line-height:1.1">{{ b.n }}</div>
+</div>
+</sc-for>
+</div>
+</div></div>
+
+</div>
+<p class="dv-next">Try next: "build the convolution tab of <a class="dv-oid" href="#1e">1e</a>" · "make <a class="dv-oid" href="#1c">1c</a> clickable" · "mobile versions of the detective and dashboard"</p>
+</section>
+<section class="dv-turn" id="t3">
+<div class="dv-thd"><a class="dv-tid" href="#t3">1</a><span class="dv-tname">Dark mode</span></div>
+<div class="dv-opts">
+<div class="dv-opt" id="1o"><div class="dv-olabel"><a class="dv-oid" href="#1o">1o</a>Home (dark)</div><div class="dv-card" style="position:relative;width:1280px;height:860px;overflow:hidden;background-color:#18171c;background-image:radial-gradient(rgba(243,238,227,.07) 1px, transparent 1.2px);background-size:18px 18px;color:#f3eee3;font-family:'Work Sans',sans-serif;border-radius:0">
+<dc-import name="Nav" active="" dark="yes" hint-size="1280px,72px"></dc-import>
+<div style="display:grid;grid-template-columns:1.35fr 1fr;gap:24px;padding:36px 56px 0;height:500px;box-sizing:border-box">
+<div style="display:flex;flex-direction:column;gap:18px;position:relative">
+<div style="align-self:flex-start;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:1px;padding:5px 10px;background:#6fdcb0;color:#111;border:2px solid #111;transform:rotate(-2deg);white-space:nowrap">FOR GRADES 9–12 · FREE</div>
+<h1 style="margin:0;font-family:'Archivo Black',sans-serif;font-size:54px;line-height:1.02;letter-spacing:-1.5px;font-weight:400">Figure out <span style="background:#ffe14d;color:#111;padding:0 12px;display:inline-block;transform:rotate(-2deg);border:3px solid #111;box-shadow:4px 4px 0 #111">AI</span> before it figures out your <span style="text-decoration:underline wavy #ff5a36 5px;text-underline-offset:12px">homework.</span></h1>
+<p style="margin:0;max-width:470px;font-size:18px;line-height:1.5;color:#b9b2a4">Bite-size lessons, hands-on models and games that show how AI works, how to use it well, and how to use it fairly.</p>
+<div style="display:flex;gap:14px;align-items:center;margin-top:4px">
+<div style="padding:15px 24px;background:#ff5a36;color:#fff;border:3px solid #111;box-shadow:5px 5px 0 #111;border-radius:12px;font-family:'Archivo Black',sans-serif;font-size:17px">Start the tour →</div>
+<div style="padding:15px 24px;background:#25232b;color:#f3eee3;border:3px solid #f3eee3;border-radius:12px;font-family:'Archivo Black',sans-serif;font-size:17px">Open the map</div>
+<div style="font-family:'Gochi Hand',cursive;font-size:21px;color:#3a5bff;transform:rotate(-4deg);line-height:1">← 3-min intro,<br>promise</div>
+</div>
+</div>
+<div style="position:relative">
+<div style="position:absolute;left:40px;top:6px;width:300px;height:360px;box-sizing:border-box;background:#25232b;border:2.5px solid #f3eee3;padding:14px 14px 58px;transform:rotate(3deg);box-shadow:6px 6px 0 #f3eee3">
+<div style="width:100%;height:100%;background:repeating-linear-gradient(45deg,#2c2a33 0 10px,#18171c 10px 20px);border:2px dashed #8c8576;display:grid;place-items:center;font-family:'Space Mono',monospace;font-size:12px;color:#b9b2a4;text-align:center">illustration:<br>Byte the robot mascot</div>
+<div style="position:absolute;left:0;right:0;bottom:12px;text-align:center;font-family:'Gochi Hand',cursive;font-size:24px;color:#f3eee3">meet Byte, your guide</div>
+</div>
+<div style="position:absolute;left:190px;top:-6px;width:110px;height:28px;background:rgba(255,225,77,.75);transform:rotate(-5deg)"></div>
+<div style="position:absolute;right:-10px;top:40px;display:flex;flex-direction:column;align-items:flex-end;gap:6px;transform:rotate(6deg)">
+<div style="display:flex;gap:6px"><span style="background:#111;color:#fff;font-family:Georgia,serif;font-style:italic;font-size:26px;padding:2px 10px">How</span><span style="background:#ffe14d;color:#111;font-family:'Space Mono',monospace;font-weight:700;font-size:24px;padding:2px 8px;border:2px solid #111;transform:rotate(-4deg)">DOES</span></div>
+<div style="display:flex;gap:6px"><span style="background:#3a5bff;color:#fff;font-family:'Archivo Black',sans-serif;font-size:30px;padding:0 10px">AI</span><span style="background:#ff9ecb;color:#111;font-family:'Gochi Hand',cursive;font-size:32px;padding:0 10px;border:2px solid #111;transform:rotate(3deg)">think?</span></div>
+</div>
+<div style="position:absolute;left:-30px;top:140px;width:130px;height:130px;background:#ffe14d;clip-path:polygon(50% 0%,61% 18%,80% 8%,79% 30%,100% 32%,86% 50%,100% 68%,79% 70%,80% 92%,61% 82%,50% 100%,39% 82%,20% 92%,21% 70%,0% 68%,14% 50%,0% 32%,21% 30%,20% 8%,39% 18%);display:grid;place-items:center;transform:rotate(-12deg)"><div style="font-family:'Archivo Black',sans-serif;font-size:22px;line-height:1;text-align:center;color:#111">+50<br><span style="font-size:14px">XP</span></div></div>
+<div style="position:absolute;right:20px;bottom:30px;width:120px;height:120px;border-radius:50%;background:#9b6bff;border:3px solid #111;box-shadow:0 0 0 5px #25232b,0 0 0 7.5px #111;display:grid;place-items:center;transform:rotate(10deg)"><div style="font-family:'Space Mono',monospace;font-weight:700;font-size:11px;line-height:1.3;color:#fff;text-align:center;letter-spacing:.5px">LEGENDARY<br>BADGES<br>HIDDEN<br>INSIDE</div></div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;padding:0 56px">
+<div style="background:#25232b;border:2.5px solid #f3eee3;box-shadow:5px 5px 0 #f3eee3;border-radius:14px;overflow:hidden">
+<div style="background:#3a5bff;color:#fff;padding:10px 16px;display:flex;justify-content:space-between;align-items:baseline;border-bottom:2.5px solid #f3eee3"><span style="font-family:'Archivo Black',sans-serif;font-size:20px">Foundations</span><span style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700">ZONE 01</span></div>
+<div style="padding:14px 16px;display:flex;flex-wrap:wrap;gap:6px;font-size:13px;font-weight:600"><span style="padding:4px 9px;border:2px solid #f3eee3;border-radius:999px">Neural networks</span><span style="padding:4px 9px;border:2px solid #f3eee3;border-radius:999px">Machine learning</span><span style="padding:4px 9px;border:2px solid #f3eee3;border-radius:999px">Deep learning</span><span style="padding:4px 9px;border:2px solid #f3eee3;border-radius:999px">How chatbots talk</span></div>
+</div>
+<div style="background:#25232b;border:2.5px solid #f3eee3;box-shadow:5px 5px 0 #f3eee3;border-radius:14px;overflow:hidden;transform:rotate(-1deg)">
+<div style="background:#ffe14d;color:#111;padding:10px 16px;display:flex;justify-content:space-between;align-items:baseline;border-bottom:2.5px solid #f3eee3"><span style="font-family:'Archivo Black',sans-serif;font-size:20px">Toolbox</span><span style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700">ZONE 02</span></div>
+<div style="padding:14px 16px;display:flex;flex-wrap:wrap;gap:6px;font-size:13px;font-weight:600"><span style="padding:4px 9px;border:2px solid #f3eee3;border-radius:999px">Clear prompts</span><span style="padding:4px 9px;border:2px solid #f3eee3;border-radius:999px">Fact-checking AI</span><span style="padding:4px 9px;border:2px solid #f3eee3;border-radius:999px">Debugging code</span><span style="padding:4px 9px;border:2px solid #f3eee3;border-radius:999px">AI in radiology</span></div>
+</div>
+<div style="background:#25232b;border:2.5px solid #f3eee3;box-shadow:5px 5px 0 #f3eee3;border-radius:14px;overflow:hidden">
+<div style="background:#ff9ecb;color:#111;padding:10px 16px;display:flex;justify-content:space-between;align-items:baseline;border-bottom:2.5px solid #f3eee3"><span style="font-family:'Archivo Black',sans-serif;font-size:20px">Ethics</span><span style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700">ZONE 03</span></div>
+<div style="padding:14px 16px;display:flex;flex-wrap:wrap;gap:6px;font-size:13px;font-weight:600"><span style="padding:4px 9px;border:2px solid #f3eee3;border-radius:999px">Deepfakes</span><span style="padding:4px 9px;border:2px solid #f3eee3;border-radius:999px">Academic honesty</span><span style="padding:4px 9px;border:2px solid #f3eee3;border-radius:999px">Data poisoning</span><span style="padding:4px 9px;border:2px solid #f3eee3;border-radius:999px">Water use</span></div>
+</div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:44px;background:#111;color:#ffe14d;display:flex;align-items:center;gap:28px;padding:0 24px;font-family:'Space Mono',monospace;font-weight:700;font-size:14px;letter-spacing:1.5px;white-space:nowrap;overflow:hidden;transform:rotate(-1deg) scale(1.03);transform-origin:center"><span>NEURAL NETWORKS</span><span style="color:#ff5a36">✶</span><span>NEXT-WORD PREDICTION</span><span style="color:#6fdcb0">✶</span><span>PROMPTING</span><span style="color:#ff9ecb">✶</span><span>DEEPFAKES</span><span style="color:#3a5bff">✶</span><span>OVERFITTING</span><span style="color:#ff5a36">✶</span><span>DATA POISONING</span><span style="color:#6fdcb0">✶</span><span>LINEAR ALGEBRA</span></div>
+</div></div>
+
+<div class="dv-opt" id="1p"><div class="dv-olabel"><a class="dv-oid" href="#1p">1p</a>Progress dashboard (dark)</div><div class="dv-card" style="position:relative;width:1280px;height:860px;overflow:hidden;background-color:#18171c;background-image:radial-gradient(rgba(243,238,227,.07) 1px, transparent 1.2px);background-size:18px 18px;color:#f3eee3;font-family:'Work Sans',sans-serif;border-radius:0">
+<dc-import name="Nav" active="" dark="yes" hint-size="1280px,72px"></dc-import>
+<div style="padding:30px 50px 0;display:flex;align-items:baseline;gap:16px"><div style="font-family:'Archivo Black',sans-serif;font-size:44px;letter-spacing:-1px">Hey Maya, welcome back.</div><div style="font-family:'Gochi Hand',cursive;font-size:24px;color:#ff5a36;transform:rotate(-3deg)">6-day streak!</div></div>
+<div style="display:grid;grid-template-columns:330px minmax(0,1fr) 300px;gap:24px;padding:24px 50px">
+<div style="background:#3a5bff;color:#fff;border:3px solid #111;box-shadow:6px 6px 0 #111;border-radius:18px;padding:24px;display:flex;flex-direction:column;align-items:center;gap:14px">
+<div style="width:190px;height:190px;border-radius:50%;background:conic-gradient(#ffe14d 0 83%, rgba(255,255,255,.25) 83% 100%);border:3px solid #111;display:grid;place-items:center"><div style="width:140px;height:140px;border-radius:50%;background:#3a5bff;border:3px solid #111;display:grid;place-items:center;text-align:center"><div><div style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700">LEVEL</div><div style="font-family:'Archivo Black',sans-serif;font-size:60px;line-height:1">7</div></div></div></div>
+<div style="font-family:'Space Mono',monospace;font-size:14px;font-weight:700">1,240 / 1,500 XP</div>
+<div style="font-size:14px;text-align:center">260 XP to Level 8 and the <b>Circuit Board</b> profile frame</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="background:#25232b;border:2.5px solid #f3eee3;box-shadow:5px 5px 0 #f3eee3;border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:16px">
+<div style="font-family:'Archivo Black',sans-serif;font-size:19px">Zones</div>
+<div style="display:grid;grid-template-columns:110px minmax(0,1fr) 120px;gap:14px;align-items:center;font-weight:700;font-size:14px"><span>Foundations</span><div style="height:18px;border:2.5px solid #f3eee3;border-radius:999px;overflow:hidden;background:#18171c"><div style="width:72%;height:100%;background:#3a5bff;border-right:2.5px solid #f3eee3"></div></div><span style="font-family:'Space Mono',monospace;font-size:12px">5/7 · 2G 2S 1B</span></div>
+<div style="display:grid;grid-template-columns:110px minmax(0,1fr) 120px;gap:14px;align-items:center;font-weight:700;font-size:14px"><span>Toolbox</span><div style="height:18px;border:2.5px solid #f3eee3;border-radius:999px;overflow:hidden;background:#18171c"><div style="width:0%;height:100%;background:#ffe14d"></div></div><span style="font-family:'Space Mono',monospace;font-size:12px;color:#8c8576">0/7 · locked</span></div>
+<div style="display:grid;grid-template-columns:110px minmax(0,1fr) 120px;gap:14px;align-items:center;font-weight:700;font-size:14px"><span>Ethics</span><div style="height:18px;border:2.5px solid #f3eee3;border-radius:999px;overflow:hidden;background:#18171c"><div style="width:0%;height:100%;background:#ff9ecb"></div></div><span style="font-family:'Space Mono',monospace;font-size:12px;color:#8c8576">0/7 · locked</span></div>
+</div>
+<div style="background:#25232b;border:2.5px solid #f3eee3;box-shadow:5px 5px 0 #f3eee3;border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:'Archivo Black',sans-serif;font-size:19px">Up next</span><span style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:#b9b2a4">8 LESSONS · 3 CASES LEFT IN ZONE</span></div>
+<div style="display:flex;align-items:center;gap:14px;padding:12px;border:2.5px solid #f3eee3;border-radius:12px;background:#ffe14d;color:#111"><span style="width:36px;height:36px;border-radius:50%;background:#ff5a36;border:2.5px solid #111;display:grid;place-items:center;color:#fff;font-size:13px">▶</span><div style="flex:1"><div style="font-weight:700">Next-word prediction</div><div style="font-size:13px">Lesson · 8 min</div></div><span style="font-family:'Space Mono',monospace;font-weight:700;font-size:13px">+120 XP</span></div>
+<div style="display:flex;align-items:center;gap:14px;padding:12px;border:2px dashed #f3eee3;border-radius:12px"><span style="width:36px;height:36px;border-radius:50%;border:2.5px solid #f3eee3;display:grid;place-items:center;font-family:'Space Mono',monospace;font-weight:700;font-size:11px">#07</span><div style="flex:1"><div style="font-weight:700">Finish: The Confident Chatbot</div><div style="font-size:13px;color:#b9b2a4">Detective · 1 clue left</div></div><span style="font-family:'Space Mono',monospace;font-weight:700;font-size:13px">+60 XP</span></div>
+<div style="display:flex;align-items:center;gap:14px;padding:12px;border:2px dashed #f3eee3;border-radius:12px"><span style="width:36px;height:36px;border-radius:50%;background:#e0a172;border:2.5px solid #f3eee3;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:13px">B</span><div style="flex:1"><div style="font-weight:700">Retake: Overfitting quiz</div><div style="font-size:13px;color:#b9b2a4">Bronze → go for silver</div></div><span style="font-family:'Space Mono',monospace;font-weight:700;font-size:13px">+30 XP</span></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="background:#25232b;border:2.5px solid #f3eee3;box-shadow:5px 5px 0 #f3eee3;border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:14px">
+<div style="font-family:'Archivo Black',sans-serif;font-size:19px">This week</div>
+<div style="display:grid;grid-template-columns:repeat(7,1fr);gap:6px;text-align:center;font-family:'Space Mono',monospace;font-size:11px;font-weight:700">
+<div style="display:flex;flex-direction:column;gap:5px;align-items:center"><span style="width:30px;height:30px;border-radius:8px;background:#ff5a36;border:2px solid #f3eee3"></span>M</div>
+<div style="display:flex;flex-direction:column;gap:5px;align-items:center"><span style="width:30px;height:30px;border-radius:8px;background:#ff5a36;border:2px solid #f3eee3"></span>T</div>
+<div style="display:flex;flex-direction:column;gap:5px;align-items:center"><span style="width:30px;height:30px;border-radius:8px;background:#ff5a36;border:2px solid #f3eee3"></span>W</div>
+<div style="display:flex;flex-direction:column;gap:5px;align-items:center"><span style="width:30px;height:30px;border-radius:8px;background:#ff5a36;border:2px solid #f3eee3"></span>T</div>
+<div style="display:flex;flex-direction:column;gap:5px;align-items:center"><span style="width:30px;height:30px;border-radius:8px;background:#ff5a36;border:2px solid #f3eee3"></span>F</div>
+<div style="display:flex;flex-direction:column;gap:5px;align-items:center"><span style="width:30px;height:30px;border-radius:8px;background:#ff5a36;border:2px solid #f3eee3"></span>S</div>
+<div style="display:flex;flex-direction:column;gap:5px;align-items:center"><span style="width:30px;height:30px;border-radius:8px;border:2px dashed #f3eee3"></span>S</div>
+</div>
+</div>
+<div style="background:#25232b;border:2.5px solid #f3eee3;box-shadow:5px 5px 0 #f3eee3;border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:'Archivo Black',sans-serif;font-size:19px">New badges</span><span style="font-size:13px;text-decoration:underline">See all</span></div>
+<div style="display:flex;gap:16px;padding:6px 4px">
+<div style="width:52px;height:52px;border-radius:50%;background:#ffc531;border:2.5px solid #111;box-shadow:0 0 0 4px #25232b,0 0 0 6px #111;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:17px;color:#111;transform:rotate(-6deg)">!?</div>
+<div style="width:52px;height:52px;border-radius:50%;background:#3a5bff;border:2.5px solid #111;box-shadow:0 0 0 4px #25232b,0 0 0 6px #111;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:17px;color:#fff;transform:rotate(4deg)">∿</div>
+<div style="width:52px;height:52px;border-radius:50%;background:#6fdcb0;border:2.5px solid #111;box-shadow:0 0 0 4px #25232b,0 0 0 6px #111;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;font-size:17px;color:#111;transform:rotate(-2deg)">7</div>
+</div>
+<div style="font-size:13px;color:#b9b2a4">11 of 60 collected</div>
+</div>
+</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1q"><div class="dv-olabel"><a class="dv-oid" href="#1q">1q</a>Mobile home (dark)</div><div style="position:relative;width:390px;height:820px;box-sizing:border-box;border:3px solid #f3eee3;border-radius:46px;box-shadow:7px 7px 0 #f3eee3;overflow:hidden;background-color:#18171c;background-image:radial-gradient(rgba(243,238,227,.07) 1px, transparent 1.2px);background-size:18px 18px;color:#f3eee3;font-family:'Work Sans',sans-serif">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px 0;font-family:'Space Mono',monospace;font-size:13px;font-weight:700"><span>9:41</span><span style="width:96px;height:26px;background:#111;border-radius:999px"></span><span>100%</span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:18px 22px 0"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;background:#ff5a36;color:#fff;padding:1px 10px 3px;border:2.5px solid #111;transform:rotate(-3deg)">learn<span style="color:#ffe14d">ai</span></div><div style="display:flex;align-items:center;gap:8px;padding:4px 10px 4px 4px;border:2px solid #f3eee3;border-radius:999px;font-family:'Space Mono',monospace;font-size:11px;font-weight:700"><span style="background:#3a5bff;color:#fff;border-radius:999px;padding:2px 7px">LV 7</span>1,240</div></div>
+<div style="padding:26px 22px 0;display:flex;flex-direction:column;gap:16px">
+<h1 style="margin:0;font-family:'Archivo Black',sans-serif;font-size:40px;line-height:1.02;letter-spacing:-1px;font-weight:400">Figure out <span style="background:#ffe14d;color:#111;padding:0 8px;display:inline-block;transform:rotate(-2deg);border:2.5px solid #111">AI</span> before it figures out your <span style="text-decoration:underline wavy #ff5a36 3px;text-underline-offset:8px">homework.</span></h1>
+<p style="margin:0;font-size:15px;line-height:1.5;color:#b9b2a4">Bite-size lessons, hands-on models and games.</p>
+<div style="padding:15px;background:#ff5a36;color:#fff;border:3px solid #111;box-shadow:4px 4px 0 #111;border-radius:12px;font-family:'Archivo Black',sans-serif;font-size:16px;text-align:center">Continue: Next-word prediction</div>
+</div>
+<div style="position:relative;margin:26px 22px 0;height:190px">
+<div style="position:absolute;left:30px;top:0;width:200px;height:180px;box-sizing:border-box;background:#25232b;border:2.5px solid #f3eee3;padding:10px 10px 36px;transform:rotate(-3deg);box-shadow:4px 4px 0 #f3eee3"><div style="width:100%;height:100%;background:repeating-linear-gradient(45deg,#2c2a33 0 8px,#18171c 8px 16px);border:2px dashed #8c8576;display:grid;place-items:center;font-family:'Space Mono',monospace;font-size:10px;color:#b9b2a4">Byte mascot</div><div style="position:absolute;left:0;right:0;bottom:6px;text-align:center;font-family:'Gochi Hand',cursive;font-size:18px">keep going!</div></div>
+<div style="position:absolute;left:100px;top:-10px;width:70px;height:20px;background:rgba(255,225,77,.8);transform:rotate(4deg)"></div>
+<div style="position:absolute;right:0;top:40px;width:100px;height:100px;background:#ffe14d;clip-path:polygon(50% 0%,61% 18%,80% 8%,79% 30%,100% 32%,86% 50%,100% 68%,79% 70%,80% 92%,61% 82%,50% 100%,39% 82%,20% 92%,21% 70%,0% 68%,14% 50%,0% 32%,21% 30%,20% 8%,39% 18%);display:grid;place-items:center;transform:rotate(12deg)"><div style="font-family:'Archivo Black',sans-serif;font-size:15px;line-height:1;text-align:center;color:#111">6-DAY<br>STREAK</div></div>
+</div>
+<div style="display:flex;gap:10px;padding:10px 22px 0;overflow:hidden">
+<div style="flex:none;width:150px;background:#3a5bff;color:#fff;border:2.5px solid #111;border-radius:14px;padding:12px;box-shadow:3px 3px 0 #111"><div style="font-family:'Space Mono',monospace;font-size:10px;font-weight:700">ZONE 01</div><div style="font-family:'Archivo Black',sans-serif;font-size:17px">Foundations</div><div style="font-size:12px;margin-top:4px">5 of 7 done</div></div>
+<div style="flex:none;width:150px;background:#ffe14d;color:#111;border:2.5px solid #111;border-radius:14px;padding:12px;box-shadow:3px 3px 0 #111"><div style="font-family:'Space Mono',monospace;font-size:10px;font-weight:700">ZONE 02</div><div style="font-family:'Archivo Black',sans-serif;font-size:17px">Toolbox</div><div style="font-size:12px;margin-top:4px">locked</div></div>
+<div style="flex:none;width:150px;background:#ff9ecb;color:#111;border:2.5px solid #111;border-radius:14px;padding:12px;box-shadow:3px 3px 0 #111"><div style="font-family:'Space Mono',monospace;font-size:10px;font-weight:700">ZONE 03</div><div style="font-family:'Archivo Black',sans-serif;font-size:17px">Ethics</div></div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:78px;background:#25232b;border-top:2.5px solid #f3eee3;display:grid;grid-template-columns:repeat(5,1fr);align-items:center;text-align:center;font-family:'Space Mono',monospace;font-size:10px;font-weight:700;padding-bottom:10px;box-sizing:border-box">
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;background:#ffe14d;border:2px solid #f3eee3"></span>HOME</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;border:2px solid #f3eee3"></span>MAP</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;border:2px solid #f3eee3"></span>CASES</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;border:2px solid #f3eee3"></span>BADGES</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px"><span style="width:26px;height:26px;border-radius:8px;border:2px solid #f3eee3"></span>LEAGUE</div>
+</div>
+</div></div>
+
+<div class="dv-opt" id="1r"><div class="dv-olabel"><a class="dv-oid" href="#1r">1r</a>Mobile quiz (dark)</div><div style="position:relative;width:390px;height:820px;box-sizing:border-box;border:3px solid #f3eee3;border-radius:46px;box-shadow:7px 7px 0 #f3eee3;overflow:hidden;background-color:#18171c;background-image:radial-gradient(rgba(243,238,227,.07) 1px, transparent 1.2px);background-size:18px 18px;color:#f3eee3;font-family:'Work Sans',sans-serif">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px 28px 0;font-family:'Space Mono',monospace;font-size:13px;font-weight:700"><span>9:41</span><span style="width:96px;height:26px;background:#111;border-radius:999px"></span><span>100%</span></div>
+<div style="padding:22px 22px 0;display:flex;align-items:center;gap:12px"><span style="font-size:22px;font-weight:700">✕</span><div style="flex:1;height:16px;border:2.5px solid #f3eee3;border-radius:999px;background:#25232b;position:relative;overflow:hidden"><div style="width:40%;height:100%;background:#6fdcb0;border-right:2.5px solid #f3eee3"></div></div><span style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700">3/5</span></div>
+<div style="display:flex;gap:8px;padding:14px 22px 0;font-family:'Space Mono',monospace;font-size:11px;font-weight:700">
+<span style="display:flex;align-items:center;gap:5px;padding:4px 8px;border:2px solid #f3eee3;border-radius:999px;background:#e0a172;color:#111">B 60%</span><span style="display:flex;align-items:center;gap:5px;padding:4px 8px;border:2px solid #f3eee3;border-radius:999px;background:#d9dde3;color:#111">S 80%</span><span style="display:flex;align-items:center;gap:5px;padding:4px 8px;border:2px solid #f3eee3;border-radius:999px;background:#ffc531;color:#111">G 100%</span>
+</div>
+<div style="margin:22px 22px 0;background:#25232b;border:3px solid #f3eee3;box-shadow:6px 6px 0 #f3eee3;border-radius:18px;padding:22px 20px;display:flex;flex-direction:column;gap:16px;position:relative">
+<div style="position:absolute;right:-12px;top:-18px;font-family:'Archivo Black',sans-serif;font-size:14px;background:#ff5a36;color:#fff;padding:4px 10px;border:2.5px solid #111;transform:rotate(8deg)">×2 COMBO</div>
+<div style="font-family:'Archivo Black',sans-serif;font-size:23px;line-height:1.2">A model scores 99% on training data and 61% on new data. What's going on?</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="padding:14px;border:2.5px solid #f3eee3;border-radius:12px;font-size:15px;font-weight:600">A · It needs a faster computer</div>
+<div style="padding:14px;border:3px solid #111;border-radius:12px;font-size:15px;font-weight:700;background:#3a5bff;color:#fff;box-shadow:3px 3px 0 #111">B · It's overfitting</div>
+<div style="padding:14px;border:2.5px solid #f3eee3;border-radius:12px;font-size:15px;font-weight:600">C · The test data is too easy</div>
+<div style="padding:14px;border:2.5px solid #f3eee3;border-radius:12px;font-size:15px;font-weight:600">D · It's underfitting</div>
+</div>
+</div>
+<div style="position:absolute;left:22px;right:22px;bottom:34px;padding:16px;background:#ff5a36;color:#fff;border:3px solid #111;box-shadow:4px 4px 0 #111;border-radius:12px;font-family:'Archivo Black',sans-serif;font-size:17px;text-align:center">Lock it in</div>
+</div></div>
+
+</div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const pts = [[120,540],[280,465],[120,390],[280,315],[120,240],[280,165],[150,90],[500,90],[660,165],[500,240],[660,315],[500,390],[660,465],[500,540],[880,540],[1040,465],[880,390],[1040,315],[880,240],[1040,165],[900,90]];
+    const names = ['Neural networks','Linear algebra','How AI learns','Overfitting','Training vs testing','Next-word prediction','Why AI makes things up','Writing clear prompts','Context engineering','Studying with AI','Checking accuracy','Research & sources','Debugging code','AI in radiology','Training data','Deepfakes','Academic honesty','Bias & misinformation','Personal info','Data poisoning','Water use'];
+    const states = ['G','S','G','B','S','now'];
+    const st = { G:{bg:'#ffc531',mark:'G'}, S:{bg:'#d9dde3',mark:'S'}, B:{bg:'#e0a172',mark:'B'}, now:{bg:'#ff5a36',mark:'▶'}, lock:{bg:'#e9e2d2',mark:''} };
+    const mapNodes = pts.map((p, i) => {
+      const s = states[i] || 'lock', d = st[s];
+      return { left: p[0]-30, top: p[1]-30, lx: p[0]-60, ly: p[1]+34, name: names[i], bg: d.bg, mark: d.mark,
+        bs: s === 'lock' ? 'dashed' : 'solid', sh: s === 'now' ? '0 0 0 6px rgba(255,90,54,.25)' : (s === 'lock' ? 'none' : '3px 3px 0 #141414'),
+        lc: s === 'lock' ? '#8c8576' : '#141414' };
+    });
+    const mapPath = 'M' + pts.map(p => p.join(',')).join(' L');
+    return { mapNodes, mapPath, ...this.extra() };
+  }
+  extra() {
+    const h = React.createElement;
+    const ins = [[70,90,'0.8'],[70,190,'0.2'],[70,290,'0.5']];
+    const hid = [[280,60,'0.71'],[280,150,'0.12'],[280,240,'0.94'],[280,330,'0.38']];
+    const outs = [[490,130,'0.82'],[490,250,'0.18']];
+    const w1 = [[.9,-.4,.7,.2],[-.6,.3,.1,.8],[.4,-.2,.9,-.5]];
+    const w2 = [[.8,-.7],[-.3,.5],[.9,-.2],[.2,.6]];
+    const lines = [];
+    ins.forEach((a,i)=>hid.forEach((b,j)=>lines.push([a,b,w1[i][j]])));
+    hid.forEach((a,i)=>outs.forEach((b,j)=>lines.push([a,b,w2[i][j]])));
+    const kids = lines.map(([a,b,w],k)=>h('line',{key:'l'+k,x1:a[0],y1:a[1],x2:b[0],y2:b[1],stroke:w>0?'#3a5bff':'#ff5a36',strokeWidth:1.5+Math.abs(w)*6,strokeLinecap:'round',opacity:.85}));
+    const node = (p,k,fill)=>[h('circle',{key:'c'+k,cx:p[0],cy:p[1],r:28,fill,stroke:'#141414',strokeWidth:3}),h('text',{key:'t'+k,x:p[0],y:p[1]+5,textAnchor:'middle',fontFamily:'Space Mono, monospace',fontWeight:700,fontSize:14,fill:'#111'},p[2])];
+    ins.forEach((p,i)=>kids.push(...node(p,'i'+i,'#6fdcb0')));
+    hid.forEach((p,i)=>kids.push(...node(p,'h'+i,'#fffdf7')));
+    outs.forEach((p,i)=>kids.push(...node(p,'o'+i,i===0?'#ffe14d':'#fffdf7')));
+    const nnSvg = h('svg',{width:560,height:390,viewBox:'0 0 560 390'},kids);
+    const rc = { C:['#d6d0c2','#111','COMMON'], UC:['#6fdcb0','#111','UNCOMMON'], R:['#3a5bff','#fff','RARE'], E:['#9b6bff','#fff','EPIC'], L:['#ffc531','#111','LEGENDARY'] };
+    const raw = [['First Steps','C','01',1],['Prompt Pro','UC','>_',1],['Weight Lifter','R','W',1],['Fact Checker','UC','✓',1],['Night Owl','C','☾',1],['Glitch Hunter','L','!?',1],['Tinkerer','R','∿',1],['Gold Rush','E','Au',1],['Streak ×7','UC','7',1],['Source Sleuth','R','§',1],['Water Saver','C','≈',1],['Deepfake Spotter','E','◐',0],['???','L','?',0],['???','R','?',0],['???','UC','?',0],['???','E','?',0],['???','C','?',0],['???','R','?',0]];
+    const badges = raw.map(([n,r,g,own],i)=>({ n, g, tag:r, bg: own?rc[r][0]:'#e9e2d2', fg: own?rc[r][1]:'#8c8576', bs: own?'solid':'dashed', op: own?1:.75, rot: ((i*37)%9-4)+'deg', ring: i===5?'0 0 0 5px #fffdf7,0 0 0 8px #ff5a36':'0 0 0 5px #fffdf7,0 0 0 7.5px #141414', tagBg: rc[r][0], tagFg: rc[r][1] }));
+    const rows = [[4,'Dev P.','DP','1,610','#6fdcb0'],[5,'Maya A. (you)','MA','1,240','#ff9ecb'],[6,'Lucas W.','LW','1,180','#ffe14d'],[7,'Priya S.','PS','1,050','#3a5bff'],[8,'Omar K.','OK','990','#9b6bff']].map(([rank,name,ini,xp,c])=>({rank,name,ini,xp,c,bg:rank===5?'#ffe14d':'#fffdf7',sh:rank===5?'4px 4px 0 #141414':'none',fw:rank===5?800:600}));
+    return { nnSvg, badges, rows };
+  }
+}
+</script>
+</body>
+</html>
