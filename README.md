@@ -1,25 +1,42 @@
-# CODING AGENTS: READ THIS FIRST
+# learnai
 
-This is a **handoff bundle** from Claude Design (claude.ai/design).
+A sticker-and-zine style AI-literacy site for grades 9–12, built with **Svelte 5 + Vite**. It is a static single-page app with no backend: all progress (XP, medals, badges, detective cases, streak days, name, theme) lives in `localStorage` under the key `learnai:v1`.
 
-A user mocked up designs in HTML/CSS/JS using an AI design tool, then exported this bundle so a coding agent can implement the designs for real.
+## Run it
 
-## What you should do — IMPORTANT
+```sh
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # static site in dist/ (relative paths, host anywhere)
+npm run check    # svelte-check
+```
 
-**Read the chat transcripts first.** There are 1 chat transcript(s) in `chats/`. The transcripts show the full back-and-forth between the user and the design assistant — they tell you **what the user actually wants** and **where they landed** after iterating. Don't skip them. The final HTML files are the output, but the chat is where the intent lives.
+## What's in it
 
-**Read `project/learnai Mockups.dc.html` in full.** The user had this file open when they triggered the handoff, so it's almost certainly the primary design they want built. Read it top to bottom — don't skim. Then **follow its imports**: open every file it pulls in (shared components, CSS, scripts) so you understand how the pieces fit together before you start implementing.
+| Route | Screen |
+| --- | --- |
+| `#/` | Home / landing |
+| `#/tour` | Intro slideshow (3 zones, arrow keys work, +50 XP on finish) |
+| `#/map` | Skill-tree map, 21 stops; a bronze medal on a quiz unlocks the next stop |
+| `#/lessons` | All lessons by zone |
+| `#/lesson/:id/:step` | Lesson page (overfitting slider, next-word game, etc.) |
+| `#/quiz/:id` | 5-question quiz, bronze 60% / silver 80% / gold 100%, combo counter |
+| `#/lab` | Network playground: Network, Convolution and Vectors tabs |
+| `#/detective`, `#/detective/:id` | AI Detective case files: flag false claims, check sources, fix the prompt |
+| `#/badges` | Sticker book, 24 badges with C / UC / R / E / L rarity, some with hidden triggers |
+| `#/me` | Progress dashboard: level, zones, up next, weekly streak, settings, reset |
 
-**If anything is ambiguous, ask the user to confirm before you start implementing.** It's much cheaper to clarify scope up front than to build the wrong thing.
+Light and dark themes follow the OS until the learner picks one (nav toggle or dashboard settings). Below 900px the layout switches to the mobile design with a bottom tab bar.
 
-## About the design files
+## Code map
 
-The design medium is **HTML/CSS/JS** — these are prototypes, not production code. Your job is to **recreate them pixel-perfectly** in whatever technology makes sense for the target codebase (React, Vue, native, whatever fits). Match the visual output; don't copy the prototype's internal structure unless it happens to fit.
+- `src/lib/store.svelte.js`: the persisted state, plus XP, levels, medals, unlocking, streaks and badge awarding
+- `src/lib/badges.js`: badge definitions and their unlock rules
+- `src/lib/data/lessons.js`, `cases.js`, `zones.js`: all course content
+- `src/routes/*`: one component per screen; `src/lib/components/*`: shared pieces and interactive widgets
 
-**Don't render these files in a browser or take screenshots unless the user asks you to.** Everything you need — dimensions, colors, layout rules — is spelled out in the source. Read the HTML and CSS directly; a screenshot won't tell you anything they don't.
+## Design source
 
-## Bundle contents
-
-- `README.md` — this file
-- `chats/` — conversation transcripts (read these!)
-- `project/` — the `Website UI mockup brief` project files (HTML prototypes, assets, components)
+The original Claude Design handoff is kept in `project/` (mockups) and `chats/` (design conversation). Changes from the mockups:
+- The League / leaderboard, Prompt Duel and other classmate features were removed because they need a backend.
+- The striped illustration placeholders were replaced with simple SVG stand-ins in `src/lib/components/Art.svelte`, to be swapped for the final art.
