@@ -1,6 +1,7 @@
 <script>
   import { route } from '../router.svelte.js';
   import { app, levelInfo, initials, avatarFrame, setTheme, theme } from '../store.svelte.js';
+  import { chrome } from '../chrome.svelte.js';
 
   const links = [
     { n: 'Map', href: '#/map', match: ['map'] },
@@ -27,7 +28,7 @@
   }
 </script>
 
-<header class="nav">
+<header class="nav" class:held={chrome.headerHeld}>
   <a class="logo" href="#/" aria-label="learnai home">learn<span>ai</span></a>
   <nav class="links" aria-label="Main">
     {#each links as l}
@@ -49,12 +50,16 @@
 <style>
   .nav {
     position: sticky; top: 0; z-index: 50;
-    height: 72px; display: flex; align-items: center; gap: 28px;
+    /* The homepage intro holds the header back, then releases it to drop in. */
+    transition: transform .55s cubic-bezier(.2, 1.3, .35, 1);
+    height: var(--nav-h); display: flex; align-items: center; gap: 28px;
     padding: 0 32px;
     background: var(--paper);
     border-bottom: 2.5px solid var(--ink);
     font-family: var(--f-mono);
   }
+  .nav.held { transform: translateY(-110%); }
+
   .logo {
     font-family: var(--f-display); font-size: 24px; text-decoration: none;
     background: var(--tomato); color: #fff; padding: 1px 12px 4px;
@@ -92,7 +97,7 @@
   .tabs { display: none; }
 
   @media (max-width: 900px) {
-    .nav { height: 64px; padding: 0 var(--gutter); gap: 10px; border-bottom-width: 2px; }
+    .nav { padding: 0 var(--gutter); gap: 10px; border-bottom-width: 2px; }
     .logo { font-size: 20px; padding: 1px 10px 3px; margin-right: auto; box-shadow: none; }
     .links { display: none; }
     .xp { font-size: 11px; padding: 4px 10px 4px 4px; }

@@ -11,8 +11,8 @@
   --bronze: #e0a172;
   --hard: #111; /* outline for coloured stickers, never flips */
 
-  /* Theme: light (cream paper) */
-  --paper: #f3eee3;
+  /* Theme: light (white graph paper) */
+  --paper: #ffffff;
   --card: #fffdf7;
   --ink: #141414;
   --muted: #5b564c;
@@ -21,7 +21,7 @@
   --locked: #e9e2d2;
   --stripe-a: #e9e2d2;
   --stripe-b: #f3eee3;
-  --dot: rgba(20, 20, 20, .08);
+  --grid: rgba(20, 20, 20, .055);
   --tint-blue: rgba(58, 91, 255, .12);
   --tint-yellow: rgba(255, 225, 77, .3);
   --tint-pink: rgba(255, 158, 203, .25);
@@ -33,6 +33,7 @@
 
   --gutter: 50px;
   --max: 1280px;
+  --nav-h: 72px;
   color-scheme: light;
 }
 
@@ -46,7 +47,7 @@
   --locked: #2c2a33;
   --stripe-a: #2c2a33;
   --stripe-b: #18171c;
-  --dot: rgba(243, 238, 227, .07);
+  --grid: rgba(243, 238, 227, .07);
   --tint-blue: rgba(58, 91, 255, .2);
   --tint-yellow: rgba(255, 225, 77, .14);
   --tint-pink: rgba(255, 158, 203, .14);
@@ -61,8 +62,14 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: var(--paper);
-  background-image: radial-gradient(var(--dot) 1px, transparent 1.2px);
-  background-size: 18px 18px;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 28px 28px;
+  /* fixed to the viewport: while a scene is pinned the scroll position still
+     advances underneath, and a scrolling background would slide behind the
+     held-still animation. This keeps the grid parked throughout. */
+  background-attachment: fixed;
   color: var(--ink);
   font-family: var(--f-body);
   font-size: 16px;
@@ -178,7 +185,7 @@ input[type="range"].slider::-moz-range-thumb {
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 @media (max-width: 900px) {
-  :root { --gutter: 22px; }
+  :root { --gutter: 22px; --nav-h: 64px; }
   .page { padding-top: 20px; padding-bottom: 110px; }
   .page-title { font-size: 32px; }
 }
