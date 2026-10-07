@@ -14,8 +14,6 @@ Your website must include the following:
 
 RULES: [https\://drive.google.com/drive/u/2/folders/1gn433HqQ8fJuND4HncRUvkmsR0leYAyh](https://drive.google.com/drive/u/2/folders/1gn433HqQ8fJuND4HncRUvkmsR0leYAyh) 
 
-CODE: [https\://gitlab.igem.org/2026/greatbay-scie](https://gitlab.igem.org/2026/greatbay-scie)   
-WEBSITE: [https\://2026.igem.wiki/greatbay-scie/](https://2026.igem.wiki/greatbay-scie/) 
 
 Website outline
 
