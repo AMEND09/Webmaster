@@ -14,6 +14,7 @@
   import Case from './routes/Case.svelte';
   import Badges from './routes/Badges.svelte';
   import Dashboard from './routes/Dashboard.svelte';
+  import Reference from './routes/Reference.svelte';
   import NotFound from './routes/NotFound.svelte';
 
   let p = $derived(route.parts);
@@ -58,10 +59,31 @@
       <Badges />
     {:else if p[0] === 'me'}
       <Dashboard />
+    {:else if p[0] === 'reference'}
+      <Reference />
     {:else}
       <NotFound />
     {/if}
   {/key}
 </main>
 
+{#if p[0] !== 'tour'}
+  <footer class="sitefoot">
+    <a href="#/reference">Reference Page</a>
+  </footer>
+{/if}
+
 <Toasts />
+
+<style>
+  .sitefoot {
+    border-top: 2.5px solid var(--ink);
+    padding: 18px var(--gutter) 26px;
+    text-align: center;
+    font-family: var(--f-mono);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+  }
+  .sitefoot a { color: var(--ink); }
+</style>

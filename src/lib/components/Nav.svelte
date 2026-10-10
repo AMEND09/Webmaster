@@ -9,6 +9,7 @@
     { n: 'Detective', href: '#/detective', match: ['detective'] },
     { n: 'Lab', href: '#/lab', match: ['lab'] },
     { n: 'Badges', href: '#/badges', match: ['badges'] },
+    { n: 'Reference', href: '#/reference', match: ['reference'] },
   ];
   const tabs = [
     { n: 'Home', href: '#/', match: [''], g: '⌂' },
