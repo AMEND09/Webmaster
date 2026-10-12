@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predev": "node scripts/collect-docs.mjs",
     "build": "vite build",
+    "prebuild": "node scripts/collect-docs.mjs",
     "preview": "vite preview",
     "check": "svelte-check"
   },

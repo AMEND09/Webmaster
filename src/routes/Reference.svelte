@@ -1,4 +1,6 @@
 <script>
+  import { docs } from '../lib/docs.generated.js';
+
   const fonts = [
     { n: 'Archivo Black', by: 'Omnibus-Type', href: 'https://fonts.google.com/specimen/Archivo+Black' },
     { n: 'Gochi Hand', by: 'Huerta Tipográfica', href: 'https://fonts.google.com/specimen/Gochi+Hand' },
@@ -66,10 +68,15 @@
 
   <section class="card block">
     <h2>Required documents</h2>
-    <div class="docs">
-      <a class="btn btn-sm" href="./student-copyright-checklist.pdf">Student Copyright Checklist (PDF)</a>
-      <a class="btn btn-sm" href="./work-log.pdf">Work Log (PDF)</a>
-    </div>
+    {#if docs.length}
+      <div class="docs">
+        {#each docs as d}
+          <a class="btn btn-sm" href={d.file}>{d.title}</a>
+        {/each}
+      </div>
+    {:else}
+      <p class="muted">Documents will be published here before submission.</p>
+    {/if}
   </section>
 </div>
 
